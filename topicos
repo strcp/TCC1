@@ -1,0 +1,34 @@
+
+Sistema de tempo real
+	História dos Sistemas
+	Tempo
+		Tempo na Execucao
+		Tempo logico
+		Tempo Denso
+		Tempo Global
+		Tempo Absoluto
+		Tempo Relativo
+	Tipos
+		Criticos
+		Nao criticos
+	Definicao de um sistema de tempo real
+		Aplicações
+		Problemas clássicos de tempo real
+	Escalonamentos
+		Agendamento preemptivo
+			Rate monotonic scheduling
+			Round-Robin
+			Fixed-Priority
+			Critical section preemptive scheduling
+			Static time scheduling
+		Earliest Deadline First
+		Cooperative scheduling
+
+	Análise
+		Pior caso de Sistemas
+		Tolerância a falhas em Sistemas de tempo real
+
+Formalismo em análise de Sistemas de tempo real
+	Metodos de modelagem
+	Métodos Formais para validação de sistemas
+	Metodo heurístico para cenários de sobrecarga de sistemas
