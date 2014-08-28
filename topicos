@@ -8,27 +8,37 @@ Sistema de tempo real
 		Tempo Global
 		Tempo Absoluto
 		Tempo Relativo
-	Tipos
-		Criticos
-		Nao criticos
 	Definicao de um sistema de tempo real
 		Aplicações
 		Problemas clássicos de tempo real
+	Tipos
+		Criticos
+		Nao criticos
 	Escalonamentos
-		Agendamento preemptivo
-			Rate monotonic scheduling
-			Round-Robin
-			Fixed-Priority
-			Critical section preemptive scheduling
-			Static time scheduling
+		Rate monotonic scheduling
+		Round-Robin
+		Fixed-Priority
+		Critical section preemptive scheduling
+		Static time scheduling
 		Earliest Deadline First
 		Cooperative scheduling
 
-	Análise
-		Pior caso de Sistemas
-		Tolerância a falhas em Sistemas de tempo real
+	Avaliação de garantias
+		Testes (Software Engineering: A Practitioner's Approach by Roger S Pressman)
+			Teste de tarefas
+			Teste de comportamento
+			Teste intertarefa
+			Teste do sistema
+		Formalismo em análise de Sistemas de tempo real
+			Metodos de modelagem
+			Uso na indústria
+			Métodos Formais para verificação de sistemas
+			Ferramentas para verificação formal
 
-Formalismo em análise de Sistemas de tempo real
-	Metodos de modelagem
-	Métodos Formais para validação de sistemas
-	Metodo heurístico para cenários de sobrecarga de sistemas
+Proposição do Sistema
+	Descrição
+	Modelagem escolhida
+	Modelo
+	Tarefas críticas
+	Validação formal
+
