@@ -29,11 +29,19 @@ Sistema de tempo real
 			Teste de comportamento
 			Teste intertarefa
 			Teste do sistema
-		Formalismo em análise de Sistemas de tempo real
-			Metodos de modelagem
-			Uso na indústria
-			Métodos Formais para verificação de sistemas
-			Ferramentas para verificação formal
+
+Lógica e verificação Formal
+	Logica aplicada
+		Logica modal e lógica temporal
+		Logica temporal sem tempo
+		Logica temporal de tempo real
+		Componentes da Logica temporal
+		Verificação de automatos
+	Formalismo em análise de Sistemas de tempo real
+		Metodos de modelagem
+		Uso na indústria
+		Métodos Formais para verificação de sistemas
+		Ferramentas para verificação formal
 
 Proposição do Sistema
 	Descrição
@@ -41,10 +49,3 @@ Proposição do Sistema
 	Modelo
 	Tarefas críticas
 	Validação formal
-	
-	Logica modal e lógica temporal
-	Logica temporal sem tempo
-	Logica temporal de tempo real
-	Componentes da Logica temporal
-	Verificação de automatos
-
