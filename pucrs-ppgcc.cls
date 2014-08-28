@@ -216,7 +216,8 @@ e-mail <rfbpiccoli at gmail dot com>^^J
 %\addto\captionsbrazil{%
     \newcommand*{\PP@Uni}{Pontif\'{i}cia Universidade Cat\'{o}lica do Rio Grande do Sul}
     \newcommand*{\PP@Fac}{Faculdade de Inform\'{a}tica}
-    \newcommand*{\PP@Dep}{Programa de P\'{o}s-Gradua\c{c}\~{a}o em Ci\^{e}ncia da Computa\c{c}\~{a}o}
+	\newcommand*{\PP@Dep}{Programa de P\'{o}s-Gradua\c{c}\~{a}o em Ci\^{e}ncia da Computa\c{c}\~{a}o}
+	\newcommand*{\PP@DepGrad}{Programa de Gradua\c{c}\~{a}o em Ci\^{e}ncia da Computa\c{c}\~{a}o}
     %\edef\PP@undef{n\~{a}o definido}
     \newcommand*{\tese}{Tese}
     \newcommand*{\pep}{Plano de estudo e pesquisa}
@@ -397,7 +398,9 @@ e-mail <rfbpiccoli at gmail dot com>^^J
             \bfseries
             \noindent\MakeUppercase{\PP@Uni}\par
             \noindent\MakeUppercase{\PP@Fac}\par
-            \noindent\MakeUppercase{\PP@Dep}\par
+			\ifx\PP@grau\bacharel
+				\noindent\MakeUppercase{\PP@DepGrad} \else
+				\noindent\MakeUppercase{\PP@Dep}\fi
         }%
         \PP@tmpdim=9.5cm
         \advance\PP@tmpdim by-4ex
