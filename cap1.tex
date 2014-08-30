@@ -10,6 +10,7 @@ lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur
 amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed
 
 \subsection{Tempo}
+\paragraph{}
 O tempo possui diferentes interpretações, especialmente na área computacional,
 podendo ser analisado em diferentes aspectos. Sendo seu entendimento de
 fundamental importância para a compreensão e análise dos sistemas de tempo
@@ -79,31 +80,59 @@ voluptua at vero eos et accusam et justo duo dolores et ea rebum
 \end{itemize}
 
 \subsection{Definição de um Sistema de Tempo Real}
+\paragraph{}
 Um sistema de tempo real, ao contrário do que se costuma pensar, não tem
-como objetivo
+como objetivo uma execução necessariamente rápida, mas sim, previsível.
+Deste tipo de sistema podemos encontrar duas características fundamentais:
+
+\begin{itemize}
+\item Um sistema de tempo real precisa produzir resultados computacionais corretos
+(chamados de corretude logica ou funcional).
+\item Os resultados computacionalmente corretos obtidos precisam ser concluídos em
+um período de tempo pré-definido, caracterizando a previsibilidade na execução da tarefa.
+\end{itemize}
+
+\paragraph{}
+Sistemas de tempo real são definidos como sistemas nos quais a corretude nos
+resultados de execução de maneira geral são dependentes tanto da corretude
+lógica como da previsibilidade do tempo de execução, sendo assim, a previsibilidade
+do tempo de execução é ao menos tão importante quanto a corretudo funcional
+nesse tipo de sistemas.~\cite{Li:2003:RCE:829584}
 
 \subsubsection{Aplicações}
-lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy
-eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam
-voluptua at vero eos et accusam et justo duo dolores et ea rebum
+\paragraph{}
+Os sistemas de tempo real são utilizados para atender à tarefas que possum algum tipo
+de restrição temporal em sua execução. Esse tipo de necessidade está muito presente no
+dia-a-dia, e são aplicados aos mais diversos tipos de tarefas, desde controladores de
+leitores de DVDs, elevadores até freios de carro, controladores de mísseis e piloto automático
+de aeronaves.
 
 \subsubsection{Problemas clássicos de tempo real}
+\paragraph{}
 lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy
 eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam
 voluptua at vero eos et accusam et justo duo dolores et ea rebum
 
 
 \subsection{Tipos de Sistema de Tempo Real}
+\paragraph{}
+Como abordado na seção (referenciar seção Definição de um Sistema de Tempo Real),
+para que um sistemas de tempo real obtenha uma execução de tarefa correta,
+é necessário terminar essa execução em um período pré-definido, chamado de \textit{deadline}.
+Portanto, é possível afirmar que este tipo de sistema, por possuir essa restrição temporal,
+é regido pelos \textit{deadlines} de suas tarefas.
+\paragraph{}
+Devido a importância dos \textit{deadlines}, esse tipo de sistema pode ser classificado como
+críticos ou não críticos, baseado na tolerância de \textit{deadlines} perdidos, a utilidade
+dos resultados computados após a perda do \textit{deadline} e a severidade da penalidade em
+perder um prazo de execução.
+
+\subsubsection{Sistemas de Tempo Real Críticos}
 lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy
 eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam
 voluptua at vero eos et accusam et justo duo dolores et ea rebum
 
-\subsubsection{Críticos}
-lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy
-eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam
-voluptua at vero eos et accusam et justo duo dolores et ea rebum
-
-\subsubsection{Não críticos}
+\subsubsection{Sistemas de Tempo Real Não Críticos}
 lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy
 eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam
 voluptua at vero eos et accusam et justo duo dolores et ea rebum
