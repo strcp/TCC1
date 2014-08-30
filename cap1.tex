@@ -101,10 +101,31 @@ dos resultados computados após a perda do \textit{deadline} e a severidade da p
 perder um prazo de execução.
 
 \subsubsection{Sistemas de Tempo Real Críticos}
-lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy
+\paragraph{}
+Os sistemas de tempo real chamados de críticos são aqueles que possuem uma restrição severa
+de prazo na execução de tarefas, ou seja, sua tolerancia em perder prazos é muito pequena
+ou nenhuma. Em muitos desses sistemas, as informações computadas fora do prazo são consideradas
+inúteis, caracterizando uma penalidade grave em perder o prazo de execução.
+\paragraph{}
+Um sistema de tempo real crítico é um sistema que precisa executar suas tarefas dentro do prazo
+pré-definido com uma tolerância muito próxima de zero. Os prazos devem ser atendidos, ou os resultados
+são catastróficos. O custo da perda de prazos na execução possum um custo muito alto, podendo inclusive
+involver vidas humanas. Os resultados computados após o prazo pré-definido possuem uma utilidade próxima
+de zero ou possuem um grande grau de depreciação com a decorrência do tempo após o prazo.~\cite{Li:2003:RCE:829584}
+\paragraph{}
+Alguns exemplos de sistemas de tempo real considerados críticos são:
+\begin{itemize}
+\item Sistema de navegação de aeronaves.
+\item Freios de carro (ABS).
+\item Marca-passo.
+\item Controladores de mísseis.
+\end{itemize}
 
 \subsubsection{Sistemas de Tempo Real Não Críticos}
-lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy
+\paragraph{}
+Os sistemas de tempo real considerados não críticos são aqueles aonde uma perda de prazo
+resulta em uma penalidade leve, como uma distorção em uma música sendo lida de um CD, perda
+de alguns frames em um vídeo entre outras consequências de baixa criticidade.
 
 
 \subsection{Tipos de escalonamentos}
