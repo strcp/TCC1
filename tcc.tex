@@ -1,4 +1,3 @@
-% hello.tex - Our first LaTeX example!
 \documentclass{article}
 \usepackage[brazilian]{babel}
 \usepackage[utf8]{inputenc}
@@ -23,64 +22,13 @@
 \maketitle
 \newpage
 
-%\tableofcontents
+\tableofcontents
 
-\section{Sistema de tempo real}
-amet lorem ipsum dolor sit amet consetetur sadipscing elitr sed
-diam nonumy eirmod.~\cite{PICCOLIDM08}
-
-	\subsection{História dos Sistemas}
-	\subsection{Tempo}
-		\subsubsection{Tempo na Execução}
-		\subsubsection{Tempo Lógico}
-		\subsubsection{Tempo Denso}
-		\subsubsection{Tempo Global}
-		\subsubsection{Tempo Absoluto}
-		\subsubsection{Tempo Relativo}
-	\subsection{Definição de um sistema de tempo real}
-		\subsubsection{Aplicações}
-		\subsubsection{Problemas clássicos de tempo real}
-		\subsection{Tipos}
-		\subsubsection{Críticos}
-		\subsubsection{Não Críticos}
-		\subsection{Escalonamentos}
-		\subsubsection{Rate monotonic scheduling}
-		\subsubsection{Round-Robin}
-		\subsubsection{Fixed-Priority}
-		\subsubsection{Critical section preemptive scheduling}
-		\subsubsection{Static time scheduling}
-		\subsubsection{Earliest Deadline First}
-		\subsubsection{Cooperative scheduling}
-
-	\subsection{Avaliação de garantias}
-		\subsubsection{Teste de tarefas}
-		\subsubsection{Teste de comportamento}
-		\subsubsection{Teste intertarefa}
-		\subsubsection{Teste do sistema}
+\input{cap1}
 \newpage
-
-\section{Lógica e verificação Formal}
-	\subsection{Lógicaçg aplicada}
-		\subsubsection{Lógica modal e lógica temporal}
-		\subsubsection{Lógica temporal sem tempo}
-		\subsubsection{Lógica temporal de tempo real}
-		\subsubsection{Componentes da Lógica temporal}
-		\subsubsection{Verificação de automatos}
-	\subsection{Formalismo em análise de Sistemas de tempo real}
-		\subsubsection{Metodos de modelagem}
-		\subsubsection{Uso na indústria}
-		\subsubsection{Métodos Formais para verificação de sistemas}
-		\subsubsection{Ferramentas para verificação formal}
-
-\section{Proposição do Sistema}
-	\subsection{Descrição}
-	\subsection{Modelagem escolhida}
-	\subsection{Modelo}
-	\subsection{Tarefas críticas}
-	\subsection{Validação formal}
-
-
+\input{cap2}
 \newpage
+\input{cap3}
 
 \bibliographystyle{ieeetr}
 \bibliography{bibliografia}
