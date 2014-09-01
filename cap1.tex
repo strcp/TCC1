@@ -12,7 +12,7 @@ real, abordaremos a comparação de algumas dessas definições a seguir.~\cite{
 \begin{itemize}
 \item \textbf{Tempo na Execução}
 
-É o prerído que uma tarefa necessita para ser executada. Assim como recursos
+É o período que uma tarefa necessita para ser executada. Assim como recursos
 físicos ou lógicos, é interpretado como um recurso que pode ser consumido
 por uma processo na sua execução.
 
@@ -71,18 +71,18 @@ um período de tempo pré-definido, caracterizando a previsibilidade na execuç�
 Sistemas de tempo real são definidos como sistemas nos quais a corretude nos
 resultados de execução de maneira geral são dependentes tanto da corretude
 lógica como da previsibilidade do tempo de execução, sendo assim, a previsibilidade
-do tempo de execução é ao menos tão importante quanto a corretudo funcional
+do tempo de execução é ao menos tão importante quanto a corretude funcional
 nesse tipo de sistemas.~\cite{Li:2003:RCE:829584}
 
 \subsubsection{Aplicações}
 \paragraph{}
-Os sistemas de tempo real são utilizados para atender à tarefas que possum algum tipo
+Os sistemas de tempo real são utilizados para atender à tarefas que possuem algum tipo
 de restrição temporal em sua execução. Esse tipo de necessidade está muito presente no
 dia-a-dia, e são aplicados aos mais diversos tipos de tarefas, desde controladores de
 leitores de DVDs, elevadores até freios de carro, controladores de mísseis e piloto automático
 de aeronaves.
 
-\subsubsection{Problemas clássicos de tempo real}
+\subsubsection{Problemas Clássicos de Tempo Real}
 \paragraph{}
 lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy
 
@@ -103,14 +103,14 @@ perder um prazo de execução.
 \subsubsection{Sistemas de Tempo Real Críticos}
 \paragraph{}
 Os sistemas de tempo real chamados de críticos são aqueles que possuem uma restrição severa
-de prazo na execução de tarefas, ou seja, sua tolerancia em perder prazos é muito pequena
+de prazo na execução de tarefas, ou seja, sua tolerância em perder prazos é muito pequena
 ou nenhuma. Em muitos desses sistemas, as informações computadas fora do prazo são consideradas
 inúteis, caracterizando uma penalidade grave em perder o prazo de execução.
 \paragraph{}
 Um sistema de tempo real crítico é um sistema que precisa executar suas tarefas dentro do prazo
 pré-definido com uma tolerância muito próxima de zero. Os prazos devem ser atendidos, ou os resultados
-são catastróficos. O custo da perda de prazos na execução possum um custo muito alto, podendo inclusive
-involver vidas humanas. Os resultados computados após o prazo pré-definido possuem uma utilidade próxima
+são catastróficos. O custo da perda de prazos na execução possuem um custo muito alto, podendo inclusive
+envolver vidas humanas. Os resultados computados após o prazo pré-definido possuem uma utilidade próxima
 de zero ou possuem um grande grau de depreciação com a decorrência do tempo após o prazo.~\cite{Li:2003:RCE:829584}
 \paragraph{}
 Alguns exemplos de sistemas de tempo real considerados críticos são:
@@ -141,56 +141,52 @@ Alguns exemplos de sistemas de tempo real considerados não críticos são:
 \item Decodificador de sinal de televisão.
 \end{itemize}
 
-\subsection{Tipos de escalonamentos}
+\subsection{Tipos de Escalonamentos}
 \paragraph{}
 Como todos os sistemas operacionais, os sistemas de tempo real também possuem algoritmos de escalonamento.
 Devido à natureza deste tipo de sistemas, seus algoritmos para escolha de execução possuem diferenças
 dos escalonadores em sistemas operacionais normais, visando, especialmente, atender aos requisitos temporais
 das tarefas na linha de execução. Como os sistemas operacionais de tempo real possuem diferentes aplicações
-com diferentes restrições, uma série de algoritmos de escalonamento foi desenvolvida, buscanda atender de
+com diferentes restrições, uma série de algoritmos de escalonamento foi desenvolvida, buscando atender de
 maneira mais otimizada cada uma destas necessidades.
 \paragraph{}
-Esses algoritmos de escalonamenteo se dividem basicamente em dois tipos, estáticos e dinâmicos.
+Esses algoritmos de escalonamento podem ser classificados como dois tipos, estáticos ou dinâmicos.
 Os escalonadores estáticos são geralmente utilizado quando os sistema executa tarefas que são previamente
-conhecidas, assim como seus prazos de execução.
+conhecidas, assim como seus prazos de execução e inclusive seu pior caso de execução.
 \paragraph{}
 Os algoritmos de escalonamento dinâmicos tomam as decisões de escalonamento em tempo de execução, não
-atribuindo prioridades fixas às tarefas, pondendo modificar essas prioridades dependendo dos critérios
+atribuindo prioridades fixas às tarefas, podendo modificar essas prioridades dependendo dos critérios
 do algoritmo utilizado.
 
-\subsubsection{Rate monotonic scheduling}
-lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy
-
-\subsubsection{Round-Robin}
-lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy
-
-\subsubsection{Fixed-Priority}
-lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy
-
-\subsubsection{Critical section preemptive scheduling}
-lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy
-
-\subsubsection{Static time scheduling}
-lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy
+\subsubsection{Rate Monotonic Scheduling}
+\paragraph{}
+O \textit{Rate Monotonic Scheduling} (RMS), é um algoritmo de escalonamento amplamente utilizado em sistemas
+de tempo real. É um algoritmo considerado estático, já que as prioridades dos processos são setadas estaticamente
+baseada na duração do ciclo de execução de cada tarefa, quanto menor seu ciclo, maior sua prioridade.
 
 \subsubsection{Earliest Deadline First}
-lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy
+\paragraph{}
+É um algoritmo de escalonamento dinâmico. Seu algoritmo consiste basicamente em avaliar a lista de processo
+pendentes a cada término de processamento, dando maior prioridade para os processos que possuem seus
+\textit{deadlines} mais próximo, caracterizando seu nome.
 
-\subsubsection{Cooperative scheduling}
-lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy
-
+\subsubsection{Round-Robin}
+\paragraph{}
+Amplamente utilizado em escalonamento de pacotes de redes de computadores e sistemas operacionais sem características
+de tempo real, é também utilizado em sistemas de tempo real. É um algoritmo preemptivo e dinâmico, se baseando no
+conceito de fatias de tempo iguais para execução de cada processo, alocados como uma lista circular.
 
 \subsection{Testes}
 lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy
 
-\subsubsection{Teste de tarefas}
+\subsubsection{Teste de Tarefas}
 lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy
 
-\subsubsection{Teste de comportamento}
+\subsubsection{Teste de Comportamento}
 lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy
 
-\subsubsection{Teste intertarefa}
+\subsubsection{Teste Intertarefa}
 lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy
 
-\subsubsection{Teste do sistema}
+\subsubsection{Teste do Sistema}
 lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy
