@@ -126,10 +126,37 @@ Alguns exemplos de sistemas de tempo real considerados críticos são:
 Os sistemas de tempo real considerados não críticos são aqueles aonde uma perda de prazo
 resulta em uma penalidade leve, como uma distorção em uma música sendo lida de um CD, perda
 de alguns frames em um vídeo entre outras consequências de baixa criticidade.
+\paragraph{}
+Esses sistemas precisam atender seus prazos pré-definidos, porém com um certo grau de flexibilidade.
+Os prazos podem possuir diferentes graus de tolerância, prazos balizados com tempo médio e até em avaliação
+estatística dos tempos de resposta. Nesse tipo de sistema, apesar de a perda de prazos não resultar em uma
+falha no sistema, os custos da perda desses prazos pode se tornar grande dependendo da proporção em que isso
+ocorre.~\cite{Li:2003:RCE:829584}
 
+\paragraph{}
+Alguns exemplos de sistemas de tempo real considerados não críticos são:
+\begin{itemize}
+\item Sistema responsável por leitura de DVD.
+\item Sistema de som em computadores pessoais.
+\item Decodificador de sinal de televisão.
+\end{itemize}
 
 \subsection{Tipos de escalonamentos}
-lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy
+\paragraph{}
+Como todos os sistemas operacionais, os sistemas de tempo real também possuem algoritmos de escalonamento.
+Devido à natureza deste tipo de sistemas, seus algoritmos para escolha de execução possuem diferenças
+dos escalonadores em sistemas operacionais normais, visando, especialmente, atender aos requisitos temporais
+das tarefas na linha de execução. Como os sistemas operacionais de tempo real possuem diferentes aplicações
+com diferentes restrições, uma série de algoritmos de escalonamento foi desenvolvida, buscanda atender de
+maneira mais otimizada cada uma destas necessidades.
+\paragraph{}
+Esses algoritmos de escalonamenteo se dividem basicamente em dois tipos, estáticos e dinâmicos.
+Os escalonadores estáticos são geralmente utilizado quando os sistema executa tarefas que são previamente
+conhecidas, assim como seus prazos de execução.
+\paragraph{}
+Os algoritmos de escalonamento dinâmicos tomam as decisões de escalonamento em tempo de execução, não
+atribuindo prioridades fixas às tarefas, pondendo modificar essas prioridades dependendo dos critérios
+do algoritmo utilizado.
 
 \subsubsection{Rate monotonic scheduling}
 lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy
