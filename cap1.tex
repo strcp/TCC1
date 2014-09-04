@@ -1,6 +1,5 @@
 \section{Introdução}
 \subsection{História dos Sistemas de Tempo Real}
-lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur
 
 \subsection{Tempo}
 \paragraph{}
@@ -177,16 +176,28 @@ de tempo real, é também utilizado em sistemas de tempo real. É um algoritmo p
 conceito de fatias de tempo iguais para execução de cada processo, alocados como uma lista circular.
 
 \subsection{Testes}
-lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy
+\paragraph{}
+Segundo Roger S. Pressman~\cite{pre_2005}, o design de caso de testes para sistemas de tempo real pode ser dividido
+em quatro passos:
 
 \subsubsection{Teste de Tarefas}
-lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy
+\paragraph{}
+No princípio, cada tarefa é testada individualmente com maneiras convencionais de testes estáticos, buscando encontrar
+apenas erros de lógica ou sintaxe no programa. É um tipo de teste que não leva em conta especificamente as peculiaridades
+dos sistemas de tempo real, não levando em conta ainda as restrições temporais impostas ao sistema e suas tarefas.
 
 \subsubsection{Teste de Comportamento}
-lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy
+\paragraph{}
+Utilizando os modelos de sistema desenvolvidos com ferramentas para automação de testes, é possível simular os comportamentos
+de um sistema de tempo real e os impactos de eventos externos sobre esses comportamentos.
 
 \subsubsection{Teste Intertarefa}
-lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy
+\paragraph{}
+Partindo do pressuposto de que as tarefas estão livres de erros, sendo isso validado pelo \textit{teste de tarefas}, as tarefas são
+testadas adicionando ao cenário as características de restrição temporal impostas ao sistema. Esse tipo de teste visa encontrar
+erros de comunicação interprocesso, testando tarefas assíncronas com diferentes taxas e tamanhos de dados.
 
 \subsubsection{Teste do Sistema}
-lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy
+\paragraph{}
+Nesse ponto, software e hardware são integrados e uma larga escala de testes de sistema são feito para encontrar erros durante
+a comunicação entre software e hardware.
