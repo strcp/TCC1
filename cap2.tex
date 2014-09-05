@@ -1,44 +1,27 @@
-\section{Formalismos para Modelagem de Sistemas}
+\section{Formalismos para Especificação e Verificação de Sistemas de Tempo Real}
+\paragraph{}
+As especificações formais são técnicas baseadas em matemática utilizadas para descrever um sistema,
+possibilitando sua análise e verificação de propriedades.
+\paragraph{}
+Não são todos os formalismos que levam em conta o aspecto temporal do problema a ser modelado.
+Em busca de um modelo formal que contemplasse estes requisitos temporais, foram desenvolvidos uma série
+de modelos que serão abordados a seguir.
 
 \subsection{Álgebra de Processos}
-\label{sec:Álgebra de Processos}
 \paragraph{}
 A álgebra de processos é uma abordagem para possibilitar o estudo de processos concorrentes. Utiliza linguagem algébrica
 para a especificação de processos e a formulação de afirmações acerca deles, assim como utiliza o cálculo para fazer a
 verificação dessas afirmações. Segundo Petri Net Algebra~\cite{books/daglib/0003970}, a álgebra de processos é a área da
 Ciência da Computação que se dedica a estudar formalmente a sequência de execução.
-
-%Pode ser dividida em dois grupos distintos:
-%Finite State Process (FSP) e Labelled Transition Systems (LTS).
-%
-%\subsubsection{Finite State Process}
-%\paragraph{}
-%Em [Finite State Process] é apresentada a teoria de processos ou autômatos com estados finitos.
-%Este formalismo nos possibilita estudar o sistema como um todo, porém falha quando queremos restrição de tempo real.
-%
-%\subsubsection{Labelled Transition Systems}
-%\paragraph{}
-
-\section{Formalismos para Especificação e Verificação de Sistemas de Tempo Real}
 \paragraph{}
-Os modelos formais expostos na seção ~\ref{sec:Álgebra de Processos}, são formalismos que não levam em conta o aspecto temporal do problema
-a ser solucionado. Os modelos mais comumente utilizados para issoEm busca de um modelo formal que contemplasse estes requisitos temporais, foram desenvolvidos
-modelos que mesclam um pouco de cada método. Como em [citação] que utiliza Redes de Petri com a Álgebra de Processos.
-Além desse, CSP (Communicating Sequential Process), ACP (Algebra of Comunicating Process)
+Apesar de haver uma série de abordagens algébricas a modelagem e análise de processos concorrentes, o foco neste trabalho
+será o \textit{Communicating Sequential Process} abordado a seguir.
 
-
-\paragraph{}
-Estes (NÚMERO) formalismos serão brevemente abordados nas subseções conseguintes.
-
-\subsection{Algebra de Processos}
-\paragraph{}
-http://theory.stanford.edu/~rvg/process.html
-
-\subsubsection{Communicating Sequential Process}
+\subsubsection{Communicating Sequential Process (CSP)}
 \paragraph{}
 \lipsum[1]
 
-\subsection{OCL}
+\subsection{Object Constraint Language (OCL)}
 \paragraph{}
 \lipsum[1]
 
