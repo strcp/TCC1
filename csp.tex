@@ -18,7 +18,25 @@ através da utilização do CSP com FDR~\cite{Lowe:1996:BFN:646480.693776}.
 
 \begin{itemize}
 \item{CSP Prover}
+
+Um provador de teoremas interativo dedicado a refinar provas utilizando a álgebra de processos CSP. Tecnicamente,
+o CSP Prover é baseado no provador de teoremas chamado Isabelle, utilizando a lógica HOL-Complex. A arquitetura
+da ferramenta procura utilizar uma abordagem genérica, facilitando a reutilização de código em diferentes modelagens
+feitas com CSP.
+
 \item{FDR (Failures Divergences Refinement)}
+
+É um software utilizado para verificar o refinamento em modelos formais expressados com a utilização de CSP.
+Criada por uma empresa chamada \textit{Formal Systems}, possui algoritmos criados por Andrew William Roscoe.
+
 \item{ProBE (Process Behaviour Explorer)}
-\item{ARC (Adelaide Refinement Checker)}
+
+Também criada pela \textit{Formal Systems}, é um \textit{animator} para CSP baseado no mesmo compilador CSPM que o FDR.
+Seu download é gratuito no site da \textit{Formal Systems}.
+
+\item{The Process Analysis Toolkit (PAT)}
+
+É um ambiente para verificador modelos, incluindo CSP. É considerado um projeto recente e recebe algumas críticas
+por não seguir a semântica padrão do CSP, possuindo inclusive variáveis compartilhadas.
+
 \end{itemize}
