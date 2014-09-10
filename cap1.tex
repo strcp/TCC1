@@ -1,7 +1,6 @@
 \section{Sistemas de Tempo Real}
 
 \subsection{Tempo}
-\paragraph{}
 O tempo possui diferentes interpretações, especialmente na área computacional,
 podendo ser analisado em diferentes aspectos. Sendo seu entendimento de
 fundamental importância para a compreensão e análise dos sistemas de tempo
@@ -27,7 +26,6 @@ um programa (\textit{logical ticks}).
 \end{itemize}
 
 \subsection{Definição de um Sistema de Tempo Real}
-\paragraph{}
 Um sistema de tempo real, ao contrário do que se costuma pensar, não tem
 como objetivo uma execução necessariamente rápida, mas sim, previsível.
 Deste tipo de sistema, podemos encontrar duas características fundamentais:
@@ -39,7 +37,6 @@ Deste tipo de sistema, podemos encontrar duas características fundamentais:
 um período de tempo pré-definido, caracterizando a previsibilidade na execução da tarefa.
 \end{itemize}
 
-\paragraph{}
 Sistemas de tempo real são definidos como sistemas nos quais a corretude nos
 resultados de execução de maneira geral são dependentes tanto da corretude
 lógica como da previsibilidade do tempo de execução, sendo assim, a previsibilidade
@@ -47,7 +44,6 @@ do tempo de execução é ao menos tão importante quanto a corretude funcional
 nesse tipo de sistemas.~\cite{Li:2003:RCE:829584}
 
 \subsubsection{Aplicações}
-\paragraph{}
 Os sistemas de tempo real são utilizados para atender à tarefas que possuem algum tipo
 de restrição temporal em sua execução. Esse tipo de necessidade está muito presente no
 dia-a-dia, e são aplicados aos mais diversos tipos de tarefas, desde controladores de
@@ -55,30 +51,29 @@ leitores de DVDs, elevadores até freios de carro, controladores de mísseis e p
 de aeronaves.
 
 \subsection{Tipos de Sistema de Tempo Real}
-\paragraph{}
 Como abordado na seção (referenciar seção Definição de um Sistema de Tempo Real),
 para que um sistemas de tempo real obtenha uma execução de tarefa correta,
 é necessário terminar essa execução em um período pré-definido, chamado de \textit{deadline}.
 Portanto, é possível afirmar que este tipo de sistema, por possuir essa restrição temporal,
 é regido pelos \textit{deadlines} de suas tarefas.
-\paragraph{}
+
 Devido a importância dos \textit{deadlines}, esse tipo de sistema pode ser classificado como
 críticos ou não críticos, baseado na tolerância de \textit{deadlines} perdidos, a utilidade
 dos resultados computados após a perda do \textit{deadline} e a severidade da penalidade em
 perder um prazo de execução.
 
 \subsubsection{Sistemas de Tempo Real Críticos}
-\paragraph{}
 Os sistemas de tempo real chamados de críticos são aqueles que possuem uma restrição severa
 de prazo na execução de tarefas, ou seja, sua tolerância em perder prazos é muito pequena
 ou nenhuma. Em muitos desses sistemas, as informações computadas fora do prazo são consideradas
 inúteis, caracterizando uma penalidade grave em perder o prazo de execução.
-\paragraph{}
+
 Um sistema de tempo real crítico é um sistema que precisa executar suas tarefas dentro do prazo
 pré-definido com uma tolerância muito próxima de zero. Os prazos devem ser atendidos, ou os resultados
 são catastróficos. O custo da perda de prazos na execução possuem um custo muito alto, podendo inclusive
 envolver vidas humanas. Os resultados computados após o prazo pré-definido possuem uma utilidade próxima
 de zero ou possuem um grande grau de depreciação com a decorrência do tempo após o prazo.~\cite{Li:2003:RCE:829584}
+
 \paragraph{}
 Alguns exemplos de sistemas de tempo real considerados críticos são:
 \begin{itemize}
@@ -89,11 +84,10 @@ Alguns exemplos de sistemas de tempo real considerados críticos são:
 \end{itemize}
 
 \subsubsection{Sistemas de Tempo Real Não Críticos}
-\paragraph{}
 Os sistemas de tempo real considerados não críticos são aqueles aonde uma perda de prazo
 resulta em uma penalidade leve, como uma distorção em uma música sendo lida de um CD, perda
 de alguns frames em um vídeo entre outras consequências de baixa criticidade.
-\paragraph{}
+
 Esses sistemas precisam atender seus prazos pré-definidos, porém com um certo grau de flexibilidade.
 Os prazos podem possuir diferentes graus de tolerância, prazos balizados com tempo médio e até em avaliação
 estatística dos tempos de resposta. Nesse tipo de sistema, apesar de a perda de prazos não resultar em uma
@@ -110,7 +104,6 @@ Alguns exemplos de sistemas de tempo real considerados não críticos são:
 
 \subsection{Análise e Verificação}
 \subsubsection{Testes}
-\paragraph{}
 Segundo Roger S. Pressman~\cite{pre_2005}, o design de caso de testes para sistemas de tempo real pode ser dividido
 em quatro passos:
 
@@ -139,6 +132,5 @@ erros de comunicação interprocesso, testando tarefas assíncronas com diferent
 
 Nesse ponto, software e hardware são integrados e uma larga escala de testes de sistema são feito para encontrar erros durante
 a comunicação entre software e hardware.
-
 
 \end{enumerate}
