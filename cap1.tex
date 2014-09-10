@@ -1,12 +1,11 @@
 \section{Sistemas de Tempo Real}
-\subsection{História dos Sistemas de Tempo Real}
 
 \subsection{Tempo}
 \paragraph{}
 O tempo possui diferentes interpretações, especialmente na área computacional,
 podendo ser analisado em diferentes aspectos. Sendo seu entendimento de
 fundamental importância para a compreensão e análise dos sistemas de tempo
-real, abordaremos a comparação de algumas dessas definições a seguir.~\cite{FARINESSIS00}
+real, abordaremos a comparação de algumas dessas definições a seguir.~\cite{Motus199321}
 
 \begin{itemize}
 \item \textbf{Tempo na Execução}
@@ -15,23 +14,15 @@ real, abordaremos a comparação de algumas dessas definições a seguir.~\cite{
 físicos ou lógicos, é interpretado como um recurso que pode ser consumido
 por uma processo na sua execução.
 
-\item \textbf{Tempo na Programação}
+\item \textbf{Tempo Físico}
+
+É obtido apartir da contagem de ciclos periódicos de um processo físico.
+O tempo métrico permite medir a distância entre a execução de eventos.
 
 \item \textbf{Tempo Lógico}
 
-\item \textbf{Tempo Físico}
-
-\item \textbf{Tempo Denso}
-
-\item \textbf{Tempo Discreto}
-
-\item \textbf{Tempo Global}
-
-\item \textbf{Tempo Local}
-
-\item \textbf{Tempo Absoluto}
-
-\item \textbf{Tempo Relativo}
+É determinado pela contagem de eventos especialmente significativos durante a execução de
+um programa (\textit{logical ticks}).
 
 \end{itemize}
 
@@ -62,10 +53,6 @@ de restrição temporal em sua execução. Esse tipo de necessidade está muito 
 dia-a-dia, e são aplicados aos mais diversos tipos de tarefas, desde controladores de
 leitores de DVDs, elevadores até freios de carro, controladores de mísseis e piloto automático
 de aeronaves.
-
-\subsubsection{Problemas Clássicos de Tempo Real}
-\paragraph{}
-
 
 \subsection{Tipos de Sistema de Tempo Real}
 \paragraph{}
