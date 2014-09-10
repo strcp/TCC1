@@ -1,28 +1,28 @@
 \section{Estudo de Caso}
-No mundo da computação vários problemas são resolvidos sem levar em conta o tempo. 
-Isto decorre da natureza dos problemas obedecerem a lógica não modal. Fazendo com que o 
-problema seja resolvido sem precisarmos atentar a aspectos temporais. Porém, existem sistemas aonde
-o aspecto temporal se faz presente. Sistemas reativos são um exemplo disto.
+No mundo da computação vários problemas são resolvidos sem levar em conta o tempo.
+Isto decorre da natureza dos problemas obedecerem a lógica não modal, fazendo com que o
+problema seja resolvido sem precisarmos atentar a aspectos temporais. Apesar disso,
+existem sistemas aonde o aspecto temporal se faz presente, sistemas reativos são um exemplo disto.
 
 A seguir será elucidado um dos problemas clássicos aonde o tempo se faz presente.
 \subsection{Problema Escolhido}
-Para a proposta de TCC1 escolhemos um problema que já é conhecido pela literatura exposto 
+Para a proposta de TCC1 escolhemos um problema que já é conhecido pela literatura exposto
 em ~\cite{opac-b1092561} para que possamos utilizar como exemplo de problema a ser modelado.
 
-O propósito do Sistema de Aquecimento de Água (SAA) é o de assegurar o funcionamento 
-seguro do Aquecedor de Água. O aquecedor de água opera em segurança se o nível da água
-não exceder o limíte de tolerância. Além desta restrição, o tanque do sistema tem também 
+O propósito do \testit{Sistema de Aquecimento de Água} (SAA) é o de assegurar o funcionamento
+seguro do aquecedor de água. O aquecedor de água opera em segurança se o nível da água
+não exceder o limite de tolerância. Além desta restrição, o tanque do sistema tem também
 sua resistência a pressão, que não pode ser maior que um valor estipulado pelo fabricante.
 
 O SAA é composto por uma série de sistemas que são necessários para o aquecimento da água e também
 para o monitoramento das condições de operação. A seguir são listados os principais subsistemas:
 \begin{itemize}
-\item um tanque para o aquecimento da água
-\item dispositivo para a medição do nível da água
-\item uma bomba d'água para o abastecimento do tanque
-\item um dispositivo para a medição da bomba d'água
-\item um dispositivo para medir a pressão dentro do tanque
-\item um sistema de controle para atuar nos dispositivos.
+\item Um tanque para o aquecimento da água
+\item Dispositivo para a medição do nível da água
+\item Uma bomba d'água para o abastecimento do tanque
+\item Um dispositivo para a medição da bomba d'água
+\item Um dispositivo para medir a pressão dentro do tanque
+\item Um sistema de controle para atuar nos dispositivos.
 \end{itemize}
 
 \subsection{Modelagem Formal}
