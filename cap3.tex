@@ -1,15 +1,26 @@
 \section{Estudo de Caso}
 No mundo da computação vários problemas são resolvidos sem levar em conta o tempo. 
 Isto decorre da natureza dos problemas obedecerem a lógica não modal. Fazendo com que o 
-problema seja resolvido sem precisarmos atentar a aspectos temporais.
+problema seja resolvido sem precisarmos atentar a aspectos temporais. Porém, existem sistemas aonde
+o aspecto temporal se faz presente. Sistemas reativos são um exemplo disto.
 
 A seguir será elucidado um dos problemas clássicos aonde o tempo se faz presente.
 \subsection{Problema Escolhido}
 O propósito do Sistema de Aquecimento de Água (SAA)[citação] é o de assegurar o funcionamento 
 seguro do Aquecedor de Água. O aquecedor de água opera em segurança se o nível da água
-não exceder o limíte de tolerância.
+não exceder o limíte de tolerância. Além desta restrição, o tanque do sistema tem também 
+sua resistência a pressão, que não pode ser maior que um valor estipulado pelo fabricante.
 
-(descrever os subsistemas)
+O SAA é composto por uma série de sistemas que são necessários para o aquecimento da água e também
+para o monitoramento das condições de operação. A seguir são listados os principais subsistemas:
+\begin{itemize}
+\item um tanque para o aquecimento da água
+\item dispositivo para a medição do nível da água
+\item uma bomba d'água para o abastecimento do tanque
+\item um dispositivo para a medição da bomba d'água
+\item um dispositivo para medir a pressão dentro do tanque
+\item um sistema de controle para atuar nos dispositivos.
+\end{itemize}
 
 \subsection{Modelagem Formal}
 intro dizendo que é uma POC, faremos a modelagem para ver os pontos fortes
