@@ -1,21 +1,25 @@
 \section{Proposta}
 \subsection{Proposta TCC 1}
 \subsubsection{Objetivos}
+Como objetivos da primeira etapa do trabalho de conclusão, buscamos, em primeiro lugar,
+elevar nosso conhecimento nas áreas de sistemas de tempo real e especialmente
+em métodos formais, com suas ferramentas e aplicações. Iremos também ,
+baseado no conhecimento de pesquisa feita no decorrer deste trabalho, modelar um sistema
+nos diferentes métodos formais de modelagem descritos na seção [CITAR SEÇÃO] para fins de
+prova de conceito, possibilitando a avaliação destes com base nessas experiências de implementação,
+analisando quais são os seus pontos fortes e fracos e quais ferramentas melhor se adaptam às nossas
+necessidades para implementarmos a segunda etapa desse trabalho de conclusão.
+\\
 
-Educação em MF.
-Justificar o MF que será utilizado no TCC2.
-(Manteremos o texto atual com modificações para explicar o que iremos modelar)
-
+\paragraph{Sistema Escolhido}\mbox{} \\\\
 No mundo da computação vários problemas são resolvidos sem levar em conta o tempo.
 Isto decorre da natureza dos problemas obedecerem a lógica não modal, fazendo com que o
 problema seja resolvido sem precisarmos atentar a aspectos temporais. Apesar disso,
 existem sistemas aonde o aspecto temporal se faz presente, sistemas reativos são um exemplo disto.
 
-A seguir será elucidado um dos problemas clássicos aonde o tempo se faz presente.
-\paragraph{Problema Escolhido}
-Para uma análise preliminar, foi escolhido um problema que já é conhecido pela literatura, exposto
-por Abrial, B\"{o}rger e Langmaack~\cite{opac-b1092561}, para que seja possível utilizar como exemplo
-de problema a ser modelado.
+Para a análise preliminar dos métodos formais de modelagem propostos, foi escolhido um problema que
+já é conhecido pela literatura, exposto por Abrial, B\"{o}rger e Langmaack~\cite{opac-b1092561},
+para que seja possível utilizar como exemplo de problema a ser modelado.
 
 O propósito do \textit{Sistema de Aquecimento de Água} (SAA) é o de garantir o funcionamento,
 de forma segura, do aquecedor de água. O aquecedor de água opera em segurança se o nível da água
@@ -33,15 +37,29 @@ para o monitoramento das condições de operação. A seguir são listados os pr
 \item Um sistema de controle para atuar nos dispositivos.
 \end{itemize}
 
-Neste trabalho será feita a modelagem de um dos subsistemas do sistema descrito acima.
-Para fins de prova de conceito, serão utilizados três métodos de modelagem para que seja possível avaliar,
-com base nessas experiências de implementação, quais são os pontos fortes e fracos de cada uma e qual ferramenta
-utilizar em uma modelagem maior em trabalho futuro.
-\paragraph{Modelo CSP}
-\paragraph{Modelo Alloy}
-\paragraph{Modelo State Charts}
+Para criação da prova de conceito em relação aos métodos formais de modelagem de sistemas préviamente
+mencionada, utilizaremos um destes subsistemas, nos capacitando tanto para a escolha do método quanto
+para o conhecimento das linguagens, ferramentas e técnicas utilizadas para essa finalidade de modelagem.
 
 \subsubsection{Cronograma}
+\renewcommand{\arraystretch}{1.5}
+\definecolor{lightgray}{gray}{0.9}
+\rowcolors{2}{white}{lightgray}
+
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+\begin{tabularx}{\textwidth}{ | c | C | }
+\hline
+\textbf{Data} & \multicolumn{1}{c|}{\textbf{Evento}} \\
+\hline
+xx.xx.2014 & Modelagem formal do sistema utilizando Statecharts \\
+xx.xx.2014 & Modelagem formal do sistema utilizando Alloy \\
+xx.xx.2014 & Modelagem formal do sistema utilizando CSP \\
+24.11.2014 & Entrega do Volume Final \\
+\hline
+\end{tabularx}
+
+
 \subsubsection{Lista de Atividades}
 
 
