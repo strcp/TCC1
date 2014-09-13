@@ -43,7 +43,6 @@ lógica como da previsibilidade do tempo de execução, sendo assim, a previsibi
 do tempo de execução é ao menos tão importante quanto a corretude funcional
 nesse tipo de sistemas.~\cite{Li:2003:RCE:829584}
 
-\subsubsection{Aplicações}
 Os sistemas de tempo real são utilizados para atender à tarefas que possuem algum tipo
 de restrição temporal em sua execução. Esse tipo de necessidade está muito presente no
 dia-a-dia, e são aplicados aos mais diversos tipos de tarefas, desde controladores de
@@ -98,8 +97,34 @@ Alguns exemplos de sistemas de tempo real considerados não críticos são:
 \item Decodificador de sinal de televisão.
 \end{itemize}
 
-\subsection{Análise e Verificação}
-\subsubsection{Testes}
+\subsection{Validação e Verificação}
+Esse tipo de tecnologia precisa possuir a garantia de que o sistema desenvolvido está apto a ser utilizado em produção
+e que conseguirá atender à todas as demandas que o serão requisitadas em seu ambiente final de uso.
+
+Segundo Kopetz~\cite{Kopetz:1997:RSD:523911}, até 50\% dos custos de desenvolvimento de um sistema de tempo real, é aplicado
+para garantir que o sistema atende completamente à seu propósito. Em aplicações de alta criticidade que necessitam ser certificadas,
+essa porcentagem se torna ainda maior.
+
+Para que seja possível garantir essas restrições, dois conceitos são amplamente aplicados,
+\textit{verificação}  e \textit{validação}.
+
+A validação atua na avaliação da consistência entre o modelo informal das intenções do usuário e
+o comportamento do sistema sendo testado, enquanto a verificação consiste em analisar a consistência
+entre a especificação formal criada e o próprio sistema em teste. Enquanto a verificação pode ser
+reduzida a um processo formal, a validação precisa avaliar o comportamento do sistema em relação ao mundo real
+aonde é aplicado. O principal método de validação é o teste, enquanto o principal método de verificação é a
+análise formal.
+
+\subsubsection{Validação}
+A validação do sistema busca garantir que o produto desenvolvido atende às necessidades dos usuários. Um dos processos
+mais utilizados para esse tipo de análise chama-se \textit{teste de aceitação do usuário}.
+
+O teste de aceitação do usuário é um dos estágios finais do do projeto. Consiste em colocar o sistema a funcionar em seu ambiente final,
+sendo operado por seu usuário final verdadeiro, avaliando suas ações e reações durante a utilização. Esse estágio de teste
+não procura encontrar erros cosméticos ou mesmo de quebra de software já que esse tipo de problema deve ser eliminado em
+estágios anteriores da qualificação do software.
+
+\subsubsection{Testes Padrão de Sistemas}
 Segundo Roger S. Pressman~\cite{pre_2005}, o design de caso de testes para sistemas de tempo real pode ser dividido
 em quatro passos:
 
@@ -131,4 +156,8 @@ a comunicação entre software e hardware.
 
 \end{enumerate}
 
-\subsubsection{Formalismos em Sistemas de Tempo Real}
+\subsubsection{Verificação Formal}
+A verificação formal consiste em, utilizando uma base matemática de métodos formais, apresentar uma prova ou
+contra-prova da corretude de algoritmos de um sistema descrito em uma dada \textit{especificação formal}, melhor
+descrita no capítulo~\ref{sec:MFeSTR}.
+
