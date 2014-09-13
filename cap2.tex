@@ -41,13 +41,13 @@ um período de tempo pré-definido, caracterizando a previsibilidade na execuç�
 Sistemas de tempo real são definidos como sistemas nos quais a corretude nos
 resultados de execução de maneira geral são dependentes tanto da corretude
 lógica como da previsibilidade do tempo de execução, sendo assim, a previsibilidade
-do tempo de execução é ao menos tão importante quanto a corretude funcional
+do tempo de execução é, ao menos, tão importante quanto a corretude funcional
 nesse tipo de sistemas.~\cite{Li:2003:RCE:829584}
 
 Os sistemas de tempo real são utilizados para atender à tarefas que possuem algum tipo
 de restrição temporal em sua execução. Esse tipo de necessidade está muito presente no
 dia-a-dia, e são aplicados aos mais diversos tipos de tarefas, desde controladores de
-leitores de DVDs, elevadores até freios de carro, controladores de mísseis e piloto automático
+leitores de DVDs, elevadores, freios de carro, controladores de mísseis e até piloto automático
 de aeronaves.
 
 \subsection{Tipos de Sistema de Tempo Real}
@@ -88,8 +88,8 @@ de alguns frames em um vídeo entre outras consequências de baixa criticidade.
 
 Esses sistemas precisam atender seus prazos pré-definidos, porém com um certo grau de flexibilidade.
 Os prazos podem possuir diferentes graus de tolerância, prazos balizados com tempo médio e até em avaliação
-estatística dos tempos de resposta. Nesse tipo de sistema, apesar de a perda de prazos não resultar em uma
-falha no sistema, os custos da perda desses prazos pode se tornar grande dependendo da proporção em que isso
+estatística dos tempos de resposta. Nesse tipo de sistema, apesar da perda de prazos não resultar em uma
+falha no sistema, os custos da perda dos mesmos pode se tornar grande, dependendo da proporção em que isso
 ocorre.~\cite{Li:2003:RCE:829584} \\\\
 Alguns exemplos de sistemas de tempo real considerados não críticos são:
 \begin{itemize}
@@ -133,8 +133,8 @@ em quatro passos:
 \item \textbf{Teste de Tarefas}
 
 No princípio, cada tarefa é testada individualmente com maneiras convencionais de testes estáticos, buscando encontrar
-apenas erros de lógica ou sintaxe no programa. É um tipo de teste que não leva em conta especificamente as peculiaridades
-dos sistemas de tempo real, não levando em conta ainda as restrições temporais impostas ao sistema e suas tarefas.
+apenas erros de lógica ou sintaxe no programa. É um tipo de teste que não leva em conta, especificamente, as peculiaridades
+dos sistemas de tempo real, não considerando, ainda, as restrições temporais impostas ao sistema e suas tarefas.
 
 
 \item \textbf{Teste de Comportamento}
@@ -145,7 +145,7 @@ de um sistema de tempo real e os impactos de eventos externos sobre esses compor
 
 \item \textbf{Teste Intertarefa}
 
-Partindo do pressuposto de que as tarefas estão livres de erros, sendo isso validado pelo \textit{teste de tarefas}, as tarefas são
+Partindo do pressuposto de que as tarefas estão livres de erros, sendo isso validado pelo \textit{teste de tarefas}, as mesmas são
 testadas adicionando ao cenário as características de restrição temporal impostas ao sistema. Esse tipo de teste visa encontrar
 erros de comunicação interprocesso, testando tarefas assíncronas com diferentes taxas e tamanhos de dados.
 
