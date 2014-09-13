@@ -1,2 +1,69 @@
-\section{Comentários Finais}
+\section{Proposta}
+\subsection{Proposta TCC 1}
+\subsubsection{Objetivos}
+Como objetivos da primeira etapa do trabalho de conclusão, buscamos, em primeiro lugar,
+elevar nosso conhecimento nas áreas de sistemas de tempo real e especialmente
+em métodos formais, com suas ferramentas e aplicações. Iremos também ,
+baseado no conhecimento de pesquisa feita no decorrer deste trabalho, modelar um sistema
+nos diferentes métodos formais de modelagem descritos na seção [CITAR SEÇÃO] para fins de
+prova de conceito, possibilitando a avaliação destes com base nessas experiências de implementação,
+analisando quais são os seus pontos fortes e fracos e quais ferramentas melhor se adaptam às nossas
+necessidades para implementarmos a segunda etapa desse trabalho de conclusão.
+\\
 
+\paragraph{Sistema Escolhido}\mbox{} \\\\
+No mundo da computação vários problemas são resolvidos sem levar em conta o tempo.
+Isto decorre da natureza dos problemas obedecerem a lógica não modal, fazendo com que o
+problema seja resolvido sem precisarmos atentar a aspectos temporais. Apesar disso,
+existem sistemas aonde o aspecto temporal se faz presente, sistemas reativos são um exemplo disto.
+
+Para a análise preliminar dos métodos formais de modelagem propostos, foi escolhido um problema que
+já é conhecido pela literatura, exposto por Abrial, B\"{o}rger e Langmaack~\cite{opac-b1092561},
+para que seja possível utilizar como exemplo de problema a ser modelado.
+
+O propósito do \textit{Sistema de Aquecimento de Água} (SAA) é o de garantir o funcionamento,
+de forma segura, do aquecedor de água. O aquecedor de água opera em segurança se o nível da água
+não exceder o limite de tolerância. Além desta restrição, o tanque do sistema tem também
+sua resistência à pressão, que não pode ser maior que um valor estipulado pelo fabricante.
+
+O SAA é composto por uma série de sistemas que são necessários para o aquecimento da água e também
+para o monitoramento das condições de operação. A seguir são listados os principais subsistemas:
+\begin{itemize}
+\item Um tanque para o aquecimento da água.
+\item Dispositivo para a medição do nível da água.
+\item Uma bomba d'água para o abastecimento do tanque.
+\item Um dispositivo para a medição da bomba d'água.
+\item Um dispositivo para medir a pressão dentro do tanque.
+\item Um sistema de controle para atuar nos dispositivos.
+\end{itemize}
+
+Para criação da prova de conceito em relação aos métodos formais de modelagem de sistemas préviamente
+mencionada, utilizaremos um destes subsistemas, nos capacitando tanto para a escolha do método quanto
+para o conhecimento das linguagens, ferramentas e técnicas utilizadas para essa finalidade de modelagem.
+
+\subsubsection{Cronograma}
+\renewcommand{\arraystretch}{1.5}
+\definecolor{lightgray}{gray}{0.9}
+\rowcolors{2}{white}{lightgray}
+
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+\begin{tabularx}{\textwidth}{ | c | C | }
+\hline
+\textbf{Data} & \multicolumn{1}{c|}{\textbf{Evento}} \\
+\hline
+xx.xx.2014 & Modelagem formal do sistema utilizando Statecharts \\
+xx.xx.2014 & Modelagem formal do sistema utilizando Alloy \\
+xx.xx.2014 & Modelagem formal do sistema utilizando CSP \\
+24.11.2014 & Entrega do Volume Final \\
+\hline
+\end{tabularx}
+
+
+\subsubsection{Lista de Atividades}
+
+
+\subsection{Proposta TCC 2}
+\subsubsection{Objetivos}
+\subsubsection{Cronograma}
+\subsubsection{Lista de Atividades}
