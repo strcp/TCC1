@@ -27,6 +27,7 @@ um programa (\textit{logical ticks}).
 \end{itemize}
 
 \subsection{Definição de um Sistema de Tempo Real}
+\label{sec:DefSTR}
 Um sistema de tempo real, ao contrário do que se costuma pensar, não tem
 como objetivo uma execução necessariamente rápida, mas sim, previsível.
 Deste tipo de sistema, podemos encontrar duas características fundamentais:
@@ -51,11 +52,10 @@ leitores de DVDs, elevadores, freios de carro, controladores de mísseis e até 
 de aeronaves.
 
 \subsection{Tipos de Sistema de Tempo Real}
-Como abordado na seção (referenciar seção Definição de um Sistema de Tempo Real),
-para que um sistemas de tempo real obtenha uma execução de tarefa correta,
-é necessário terminar essa execução em um período pré-definido, chamado de \textit{deadline}.
-Portanto, é possível afirmar que este tipo de sistema, por possuir essa restrição temporal,
-é regido pelos \textit{deadlines} de suas tarefas.
+Como abordado na seção~\ref{sec:DefSTR}, para que um sistemas de tempo real obtenha uma
+execução de tarefa correta, é necessário terminar essa execução em um período pré-definido,
+chamado de \textit{deadline}. Portanto, é possível afirmar que este tipo de sistema, por possuir
+essa restrição temporal, é regido pelos \textit{deadlines} de suas tarefas.
 
 Devido a importância dos \textit{deadlines}, esse tipo de sistema pode ser classificado como
 críticos ou não críticos, baseado na tolerância de \textit{deadlines} perdidos, a utilidade
