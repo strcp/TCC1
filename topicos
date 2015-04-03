@@ -1,0 +1,24 @@
+- Ubiquitous computing
+- IOT
+	Energy management
+	Building and home automation
+	Transportation
+	Medical and healthcare systems
+
+	- Estado da arte
+		- mbed
+		- FlowCloud
+		- Samsung IOT
+		- IBM IOT (Smart City)
+		- GE (Health)
+
+- COMPaaS
+	- Arquitetura
+
+- HellFire
+	- Arquitetura
+
+- Framework de Integração Que Precisa de um Nome
+	(descrição das limitações na junção entre COMPAAS e HF e motivação para o desenvolvimento)
+	- Arquitetura proposta
+	- Prova de conceito
