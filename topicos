@@ -1,4 +1,3 @@
-- Ubiquitous computing
 - IOT
 	Energy management
 	Building and home automation
@@ -15,10 +14,10 @@
 - COMPaaS
 	- Arquitetura
 
-- HellFire
+- Hellfire
 	- Arquitetura
 
 - Framework de Integração Que Precisa de um Nome
-	(descrição das limitações na junção entre COMPAAS e HF e motivação para o desenvolvimento)
+	(descrição das limitações na junção entre COMaAaS e HF e motivação para o desenvolvimento)
 	- Arquitetura proposta
 	- Prova de conceito
