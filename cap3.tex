@@ -1,13 +1,20 @@
 \section{COMPaaS}
 \label{sec:COMPaaS}
-\subsection{Arquitetura}
 Cooperative Middleware Platform as a Service (COMPaaS) é um sistema que provê aos usuários uma simples e bem definida plataforma de serviços.
 Ele é composto por 3 subsistemas, a saber:  Application Level Events Interface (ALE), Middleware Level Events Interface (MLE) e Device Level
 Protocol (DLE).
-\subsubsection{Application Level Events Interface}
-O ALE expõe uma interface SOAP para a comunicação com as aplicações. Ele é responsável por receber as requisições das aplicações e encaminha-las ao MLE. As informações requisitadas são recebidas do MLE por meio de um WebSocket.
-\subsubsection{Middleware Level Events Interface}
-O MLE expõe uma interface RESTful para a comunicação com o ALE. É responsável pelo recebimento das requisições oriundas do ALE para então encaminhar as mesmas para o DLE. Os dados retornados do DLE, no formato de DataMessage object, são então enviados ao ALE por meio de WebSocket.
-\subsubsection{Device Level Protocol}
-O DLE cria um dispositivo virtual em torno do dispositivo físico e é responsável por definir o formato do DataMessage object e expor as funcionalidades que são realizadas pelo dispositivo físico. O DLE é o responsável por saber das minúcias de cada dispositivo, então, para cada novo dispositivo que se deseja incluir na IoT, é necessário criar um DLE específico para aquele dispositivo. Isto é um pouco oneroso e será um dos temas abordados neste trabalho.
 
+\subsubsection{Application Level Events Interface}
+O ALE expõe uma interface SOAP para a comunicação com as aplicações. Ele é responsável por receber as requisições das aplicações e encaminha-las ao MLE.
+As informações requisitadas são recebidas do MLE por meio de um WebSocket.
+
+\subsubsection{Middleware Level Events Interface}
+O MLE expõe uma interface RESTful para a comunicação com o ALE. É responsável pelo recebimento das requisições oriundas do ALE para então encaminhar as mesma
+para o DLE. Os dados retornados do DLE, no formato de DataMessage object, são então enviados ao ALE por meio de WebSocket.
+
+\subsubsection{Device Level Protocol}
+O DLE cria um dispositivo virtual em torno do dispositivo físico e é responsável por definir o formato do DataMessage object e expor as funcionalidades que
+são realizadas pelo dispositivo físico. O DLE é o responsável por saber das minúcias de cada dispositivo, então, para cada novo dispositivo que se deseja
+incluir na IoT, é necessário criar um DLE específico para aquele dispositivo. Isto é um pouco oneroso e será um dos temas abordados neste trabalho.
+
+\subsection{Arquitetura}
