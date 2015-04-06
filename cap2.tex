@@ -1,6 +1,17 @@
 \section{Internet of Things}
 \label{sec:IoT}
-Citação~\cite{COMPaaS}
+O termo \textit{Internet of Things} foi usado pela primeira vez pelos fundadores do \textit{MIT Auto-ID Center},
+mencionado especialmente pelo britânico Kevin Ashton no ano de 1999, referindo-se especificamente a área de
+Gerenciamento da Cadeia de Suprimentos~\cite{kevinashton2009}. Com o passar do tempo, as aplicações utilizando
+esse conceito se ampliaram, sendo aplicadas em áreas como transporte, cuidados com a saúde, automação residencial,
+entre outras. Devido a essa evolução no conceito, a definição de \textit{Things} foi se tornando cada vez mais
+abrangente, representando desde implantes de monitoramento cardíacos e transponders para identificação animal
+até automóveis com sensores integrados, sensores para análise de luminosidade e temperatura.
+A \textit{Internet of Things} consiste basicamente em uma rede de objetos físicos (\textit{Things}) que fornecem
+informações específicas de seu contexto, gerando assim, uma enorme quantidade de dados desconexos que precisam
+ser armazenados, processados e apresentados de uma forma eficiente e de fácil interpretação. O grande valor
+encontrado no conceito de \textit{Internet of Things} é relação das informações produzida por essa rede de
+dispositivos.
 
 \subsection{Aplicações}
 \label{sec:IoTAp}
@@ -18,12 +29,12 @@ A plataforma utiliza em seu sistema embarcado a tecnologia mbedTLS para criptogr
 A seguir detalharemos cada uma das tecnologias oferecidas pela mbed.\\
 
 \subsubsubsection{mbed OS}
-É um sistema operacional, disponiblizado de graça, para processadores da linha ARM Cortex-M, que são desenvolvidos visando a eficiência de energia e produtividade.\\
-A arquitetura do mbed OS fornece componentes de sofrtware e um framework de aplicação que, combinados com a grande diversidade de empresas e desenvolvedores que disponiblizam bibliotecas e drivers, facilitam e agilizam o processo de desenvolvimento de aplicações para IoT.\\
+É um sistema operacional, disponibilizado de graça, para processadores da linha ARM Cortex-M, que são desenvolvidos visando a eficiência de energia e produtividade.\\
+A arquitetura do mbed OS fornece componentes de software e um framework de aplicação que, combinados com a grande diversidade de empresas e desenvolvedores que disponibilizam bibliotecas e drivers, facilitam e agilizam o processo de desenvolvimento de aplicações para IoT.\\
 O mbed OS provê suporte aos padrões como Bluetooth Smart®, Cellular, Thread, Wi-Fi®, e 802.15.4/6LoWPAN junto com TLS/DTLS, CoAP, HTTP, MQTT e Lightweight M2M
 
 \subsubsubsection{mbed Device Server}
-É um produto que precisa de licença, serve para conectar e gerenciar os dispositivos de uma forma segura. Ele provê a ligação entre os os protocolos utilizados nos dispositivos IoT e a API que é utilizada por desenvolvedores web. Isto simplifica a integração de dispositivos IoT que geram \lq little data\rq\ que vão para os servidores que analizam e agregam a informação gerando a \lq big data \rq.\\
+É um produto que precisa de licença, serve para conectar e gerenciar os dispositivos de uma forma segura. Ele provê a ligação entre os os protocolos utilizados nos dispositivos IoT e a API que é utilizada por desenvolvedores web. Isto simplifica a integração de dispositivos IoT que geram \lq little data\rq\ que vão para os servidores que analisam e agregam a informação gerando a \lq big data \rq.\\
 O Device Server é escalável, podendo conectar e gerenciar milhões de dispositivos.
 
 \subsubsubsection{Arquitetura}
