@@ -34,16 +34,28 @@ A arquitetura do mbed OS fornece componentes de software e um framework de aplic
 O mbed OS provê suporte aos padrões como Bluetooth Smart®, Cellular, Thread, Wi-Fi®, e 802.15.4/6LoWPAN junto com TLS/DTLS, CoAP, HTTP, MQTT e Lightweight M2M
 
 \subsubsubsection{mbed Device Server}
-É um produto que precisa de licença, serve para conectar e gerenciar os dispositivos de uma forma segura. Ele provê a ligação entre os os protocolos utilizados nos dispositivos IoT e a API que é utilizada por desenvolvedores web. Isto simplifica a integração de dispositivos IoT que geram \lq little data\rq\ que vão para os servidores que analisam e agregam a informação gerando a \lq big data \rq.\\
+É um produto que precisa de licença, serve para conectar e gerenciar os dispositivos de uma forma segura. Ele provê a ligação entre os os protocolos utilizados nos dispositivos IoT e a API que é utilizada por desenvolvedores web. Isto simplifica a integração de dispositivos IoT que geram \lq little data\rq\ que vão para os servidores que analizam e agregam a informação gerando a \lq big data\rq.\\
 O Device Server é escalável, podendo conectar e gerenciar milhões de dispositivos.
 
 \subsubsubsection{Arquitetura}
 https://mbed.org/technology/device-server/ \\
 
 \subsubsection{FlowCloud}
+FlowCloud \cite{flowcloud} é uma tecnologia que visa conectar dispositivos a internet de modo a facilitar o desenvolvimento e grernciamento de aplicações \lq machine to machine\rq\ (M2M) e \lq man to machine\rq. A imgtec, empresa que desenvolveu o FlowCloud, visa suprir as necessidades da IoT, provendo meios de conectar dispositivos que estão separados grograficamente estabelecendo uma conexão ponto a ponto (P2P) entre os dispositivos.
+
 \subsubsection{Arrayent}
 www.arrayent.com\\
 http://en.wikipedia.org/wiki/Arrayent\\
+Arrayent \cite{arrayent} é uma plataforma IoT que oferece conexão e segurança entre dispositivos IoT e aplicações para  smartphones, tablets e web com baixo custo e simplicidade. A plataforma é composta de 4 componentes: Arrayent Connect Agent, Arreyent Connect Cloud, Arrayent Mobile Framework e Arrayent Cloud Insight.
+\subsubsubsection{Arrayent Connect Agent}
+É utilizado por desenvolvedores de softare embarcado. Funciona como um módulo do firmware que gerencia a seção do dispositivo com junto ao Arreyent Connect Cloud e abstrai essa responsabilidade para o desenvolvedor do firmware, deixando-o livre para se preocupar em desenvolver apenas as funcionalidades necessárias para o funcionamento do dispositivo.\\
+Atualmente ele suporta Wi-Fi, ZigBee, Z-Wave LAN e os sistemas operacionais Linux ou FreeRTOS.
+\subsubsubsection{Arrayent Connect Cloud}
+O Arrayent Connect Cloud é o coração da plataforma de IoT da Arrayent. Ele é essencialmente um sistema operacional baseado na cloud que agrega os dispositivos virtualizados, que são uma cópia dos dispositivos físicos,  para que as aplicações web e mobile possam se conectar e recolher informações ou executar comandos sobre os dispositivos. Além disso, o Arreyent Connect Cloud pode emitir alertas, fazer update de firmware \lq over-the-air\rq, gerenciar contas de usuários e muito mais.
+\subsubsubsection{Arreyent Mobile Framework}
+O Arrayent Mobile Framework ajuda os desenvolvedores mobile a criar rapidamente aplicativos intuitivos e confiáveis para o mercado. Ele abstrai a complexidade envolvida na utilização da plataforma M2M da Arrayent, que é uma API web de baixo nível, deixando o desenvolvedor livre para se preocupar apenas com as funcionalidades e beleza dos aplicativos por ele desenvolvidos.
+\subsubsubsection{Arrayent Cloud Insight}
+O Arrayent Cloud Insight é responsável pela camada de negócio, fornecendo serviços de Business Intelligence, gerando relatórios de dados comuns a todos os seus produtos como localização do dispositivo, interações entre os dispositivos e as aplicações, tendência de pico de utilização e muito mais. O Arrayent Cloud Insight agrega, normaliza, filtra e entrega os dados dos dispositivos para qualquer solução de análise que você utilizar.
 
 \subsubsection{Samsung IoT Plataform}
 http://developer.samsung.com/iot \\
