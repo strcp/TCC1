@@ -1,8 +1,22 @@
 \section{Cooperative Middleware Platform as a Service}
 \label{sec:COMPaaS}
 Cooperative Middleware Platform as a Service (COMPaaS) é um sistema que provê aos usuários uma simples e bem
-definida plataforma de serviços. Ele é composto por 3 subsistemas, a saber:  Application Level Events
+definida plataforma de serviços para o desenvolvimento de aplicações de \textit{Internet of Things}.
+
+O COMPaaS amplia as especificações do EPCglobal em relação às interfaces de middleware RFID para
+prover serviços de alto nível. Além disso, provê também uma leve arquitetura baseada nas especificações
+ETSI para plataforma de serviços M2M, assim como uma aplicação web para integração de dispositivos físicos.
+O intuito principal desta plataforma se estende desde o gerenciamento de dados até a integração dos
+dispositivos, provendo uma serviços cooperativos e de alto nível para as aplicações.
+
+Ele é composto por 3 subsistemas, a saber:  Application Level Events
 Interface (ALE), Middleware Level Events Interface (MLE) e Device Level Protocol (DLE).
+
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=0.5\textwidth]{fig/compaas_arch.png}
+	\caption{Arquitetura em alto nível do COMPaaS.}
+\end{figure}
 
 \subsection{Application Level Events Interface}
 O \textit{Application Level Events} (ALE) expõe uma interface SOAP para a comunicação com as aplicações.
@@ -19,11 +33,3 @@ O DLE cria um dispositivo virtual em torno do dispositivo físico e é responsá
 object e expor as funcionalidades que são realizadas pelo dispositivo físico. O DLE é o responsável por saber das
 minúcias de cada dispositivo, então, para cada novo dispositivo que se deseja incluir na IoT, é necessário criar
 um DLE específico para aquele dispositivo. Isto é um pouco oneroso e será um dos temas abordados neste trabalho.
-
-\subsection{Arquitetura}
-\begin{figure}[H]
-	\centering
-		\includegraphics[width=0.5\textwidth]{fig/compaas_arch.png}
-	\caption{Arquitetura do COMPaaS.}
-\end{figure}
-
