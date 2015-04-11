@@ -1,12 +1,12 @@
 \section{Hellfire and COMPaaS Integration Layer (HAC)}
 \label{sec:HAC}
 Como objetivo deste trabalho, temos a criação de uma camada de integração entre o sistema de tempo real
-, previamente descrito, HellfireOS~\ref{HellfireOS} e a plataforma COMPaaS, também analisada anteriormente~\ref{COMPaaS}.
-Essa camada consistirá em adicionar suporte a duas questões críticas no HellfireOS, uma biblioteca compatível
-com o protocolo de comunicação esperado pela camada de mais baixo nível do COMPaaS e, para prova de conceito,
-uma meio de comunicação entre o HellfireOS e a plataforma IoT, tendo em vista que o sistema operacional
-ainda não possui uma implementação de todas as camadas de rede necessárias, como por exemplo, o protocolo
-TCP.
+, previamente descrito na seção~\ref{sec:HellfireOS}, HellfireOS e a plataforma COMPaaS, também analisada
+anteriormente na seção~\ref{sec:COMPaaS}. Essa camada consistirá em adicionar suporte a duas questões
+críticas no HellfireOS, uma biblioteca compatível com o protocolo de comunicação esperado pela camada de
+mais baixo nível do COMPaaS e, para prova de conceito, uma meio de comunicação entre o HellfireOS e a
+plataforma IoT, tendo em vista que o sistema operacional ainda não possui uma implementação de todas as
+camadas de rede necessárias, como por exemplo, o protocolo TCP.
 
 \begin{figure}[H]
 	\centering
@@ -22,6 +22,12 @@ poucas ou nenhuma alteração quando o HellfireOS possuir outros meios de comuni
 Para possibilitar que essa comunicação entre host e HellfireOS funcione, será desenvolvida uma
 daemon no sistema host para interfacear sua camada de comunicação via rede com a comunicação
 via memória compartilhada com o sistema de tempo real.
+
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=0.6\textwidth]{fig/HAC_IL.png}
+	\caption{Arquitetura do protótipo proposto para prova de conceito.}
+\end{figure}
 
 \subsection{Prova de Conceito}
 Para provar a o funcionamento da camada de integração, será utilizada uma
