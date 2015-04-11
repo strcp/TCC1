@@ -3,10 +3,13 @@
 \subsubsection{Objetivos}
 Como objetivos da primeira etapa do trabalho de conclusão, buscamos, em primeiro lugar,
 elevar nosso conhecimento nas áreas de sistemas embarcados. Iremos também,
-baseado no conhecimento de pesquisa feita no decorrer deste trabalho, implementar
-a integração do COMPaaS com o Hellfire, descritos nas seções~\ref{sec:COMPaaS} e~\ref{sec:HellfireOS}
-respectivamente com a finalidade de...
-\\
+baseado no conhecimento de pesquisa feita no decorrer deste trabalho, criar o ambiente
+necessário para efetuar a prova de conceito, obtendo o hardware necessário, e fazendo
+as instalações necessárias de sistemas operacionais, host Linux e o HellfireOS, este de forma
+virtualizada. Iremos iniciar também as medidas necessárias para suprir a falta de da completude
+das camadas de protocolos de rede necessária, implementando uma comunicação através de memória
+compartilhada entre os dois sistemas e, inclusive, uma deamon para interfacear o espaço de memória
+compartilhada no host Linux e a rede.
 
 \subsubsection{Cronograma}
 \renewcommand{\arraystretch}{1.5}
@@ -19,17 +22,11 @@ respectivamente com a finalidade de...
 \hline
 \textbf{Data} & \multicolumn{1}{c|}{\textbf{Evento}} \\
 \hline
-16.04.2015 & Escolha de ... \\
-
-17.04.2015 & Escolha de ... \\
-17.04.2015 & Escolha de ... \\
-17.04.2015 & Escolha de ... \\
-
-17.04.2015 & Escolha de ... \\
-17.04.2015 & Escolha de ... \\
-17.04.2015 & Escolha de ... \\
-
-22.06.2015 & Entrega do Volume Final \\
+16.04.2015 & Criação do ambiente da Cubieboard com o host Linux. \\
+17.04.2015 & Preparação do ambiente com o suporte e configurações de virtualização necessárias. \\
+17.04.2015 & Instalação do HellfireOS de forma virtualizada rodando sobre o host Linux. \\
+17.04.2015 & Início da implementação da comunicação entre host e HellfireOS através de memória compartilhada. \\
+22.06.2015 & Entrega do Volume Final. \\
 \hline
 \end{tabularx}
 
@@ -41,6 +38,18 @@ respectivamente com a finalidade de...
 
 \subsection{Proposta TCC 2}
 \subsubsection{Objetivos}
+Nesta etapa iremos finalizar os ajustes necessários do ambiente proposto para teste para então
+implementar a integração da plataforma COMPaaS com o sistema HellfireOS,
+descritos nas seções~\ref{sec:COMPaaS} e~\ref{sec:HellfireOS} respectivamente, com a criação
+do \textit{Hellfire and COMPaaS Integration Layer} (HAC), descrito na seção~\ref{sec:HAC},
+objetivando a criação de uma solução completa, desde o sistema operacional embarcado
+responsável pela gerência de múltiplos sensores, até a plataforma de IoT, possibilitando
+um uso de funcionalidade robusta e simples do HellfireOS na criação e aplicação de
+equipamentos integráveis no conceito de \textit{Internet of Things}.
+Para prova e testes desta integração, será criado um simulador de sensor da área médica,
+baseada em estudos efetuados nesta segunda etapa do trabalho, possibilitando um teste
+da integração de forma completa, passando por todos os níveis descritos nas arquiteturas
+tanto da plataforma COMPaaS como no HellfireOS nas seções anteriores.
 
 \subsubsection{Cronograma}
 \renewcommand{\arraystretch}{1.5}
