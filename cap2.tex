@@ -186,13 +186,34 @@ As instalações experimentais propostas pelo \textit{SmartSantander} precisam a
 de diferentes \textit{stakeholders}, desde desenvolvedores de soluções e provedores de serviços IoT até os usuários finais.
 Vários requisitos funcionais e não-funcionais foram levantados no princípio do projeto, levando em consideração
 os variados pontos de vista e necessidades dos \textit{stakeholders} envolvidos. Os resultados foram divididos em quatro
-aspectos, criando o modelo arquitetura com os subsistemas relacionados abaixo~\cite{citeulike:13508566}:
-\begin{itemize}
-\item Authentication, authorisation and accounting (AAA) subsystem
-\item Testbed management subsystem
-\item Experimental support subsystem
-\item Application support subsystem
-\end{itemize}
+aspectos, criando o modelo arquitetura com os subsistemas descritos a seguir~\cite{citeulike:13508566}:
+
+
+\subsubsubsection{Authentication, Authorisation and Accounting (AAA)}
+Implementa funções que controlam e auditam o acesso à todas as funcionalidades do sistema. Possui processos
+comuns entre todos os tipos de usuários da instalação. Representa tipicamente o primeiro ponto de contato
+do usuário para que esse tenha acesso às demais funcionalidades do ambiente de testes, o \textit{Testbed}.
+Além das funcionalidades de gerenciamento das contas de usuários no ambiente de teste, as funções
+do AAA garante que o usuário está propriamente autenticado e que possui a autorização necessária para
+acessar o ambiente de teste de acordo com suas permissões.
+
+\subsubsubsection{Testbed Management}
+O \textit{Testbed Management} engloba as funções que são relevantes para a operação do ambiente de teste.
+Este subsistema provê uma série de funcionalidades, como por exemplo configuração \textit{plug and play}
+de novos componentes do \textit{testbed}, monitoramento e avaliação de performance.
+
+\subsubsubsection{Experimental Support}
+
+O \textit{Experimental Support} provê todas as funcionalidades relativas ao ciclo de vida dos usuários
+do ambiente de teste. As funcionalidades são geralmente utilizadas por pesquisadores, mas também são utilizadas por
+provedores de sistemas, já que um sistema pode ser visto como um experimento de longa duração.
+Suas funcionalidades incluem funções para verificar a ocupação dos recursos no ambiente de testes e suas características,
+mecanismos para configurar os experimentos, controle dos experimentos e análise de dados.
+
+\subsubsubsection{Application Support}
+O \textit{Application Support} provê funcionalidades para serem utilizadas por desenvolvedores de aplicações
+e provedores de serviços para compor um \textit{Smart Service} rodando nas instalações do \textit{SmartSantander}.
+Estas são ferramentas para acessar facilmente informações de sensores e gerenciar dados.
 
 \subsubsection{FIWARE}
 O FIWARE é uma iniciativa para promover um ecossistema que capture as oportunidades que surgirão com a nova onda
@@ -207,7 +228,7 @@ publicamente, possibilitando que mais provedores de solução entrem no mercado 
 
 \subsubsubsection{FIWARE Lab}
 Experimentos realizados em ambiente real aceleram o desenvolvimento das tecnologias da Internet do Futuro e seus serviços,
-qualificam o mercado de infraestruturas \textit{Smart} , para possibilitar isso, o \textit{FIWARE Lab} foi criado.
+qualificam o mercado de infraestruturas \textit{Smart}, para possibilitar isso, o \textit{FIWARE Lab} foi criado.
 O \textit{FIWARE Lab} é um ambiente de teste não comercial criado para que a experimentação e inovação baseada nas tecnologias
 FIWARE sejam fomentadas. Investidores, desenvolvedores e demais interessados podem testar a tecnologia e suas aplicações neste
 ambiente, se utilizando de \textit{Open Data} publicada por cidades e organizações. O \textit{FIWARE Lab} é aplicado sobre
