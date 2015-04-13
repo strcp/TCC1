@@ -9,10 +9,15 @@ Deadline Monotonic.
 Possui mapeamento dinâmico de tarefas, através das primitivas para migração de tarefas. A migração pode
 ser implícita ou explícita. Na migração explícita, o designer insere pontos de migração no código
 da aplicação. Já a migração implícita é feita por um mecanismo automatizado que monitora a carga do
-sistema e envia ordem de migração para as tarefas.
+sistema e envia ordem de migração para as tarefas. Geralmente, os benefícios da migração de tarefas são
+o balanciamento de carga nos processadores, decrécimo no consumo de energia e suporte a técnicas de
+tolerância a falhas.
 
-Geralmente, os benefícios da migração de tarefas são o balanciamento de carga nos processadores, decrécimo
-no consumo de energia e suporte a técnicas de tolerância a falhas.
+HellfireOS é um micro-kernel portável composto de vários módulos e pode ser configurado de diversas maneiras,
+ora visando o numero máximo de tarefas em um processador, ora definindo o tamanho da pilha da tarefa.
+A idéia é permitir ao designer otimizar o tamanho final da imagem do kernel de acordo com as restrições
+da aplicação e de sistema. Permitindo assim que o designer permita ao sistema rodar em plataformas com
+baixa memória, como é o caso dos típicos sistemas embarcados críticos.
 
 Dentre as bibliotecas mais relevantes ao desenvolvimento da integração abordada na seção~\ref{sec:HAC},
 consta uma LibC customizada e a biblioteca matemática (math.h) com emulação de número de ponto
