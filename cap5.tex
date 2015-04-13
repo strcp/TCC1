@@ -1,6 +1,15 @@
 \section{Hellfire and COMPaaS Integration Layer (HAC)}
 \label{sec:HAC}
-Como objetivo deste trabalho, temos a criação de uma camada de integração entre o sistema de tempo real
+Atualmente, a plataforma COMPaaS possui a necessidade de criação de uma abstração para
+cada dispositivo que pretende se comunicar à ela, tornando o processo de adoção do COMPaaS
+oneroso neste aspecto. Para eliminar esta necessidade, propõe-se a adaptação do sistema
+HellfireOS, que já possui a infraestrutura necessária para suportar múltiplos tipos de
+sensores, para que suporte a comunicação com a plataforma COMPaaS de forma praticamente
+transparente do ponto de vista do suporte de hardware dos sensores ligados ao sistema,
+permitindo que os produtos que adotem o HellfireOS como seu sistema embarcado estejam aptos
+a se integrarem à solução IoT de forma mais rápida e simples.
+
+Para possibilitar essa comunicação, será implementada uma camada de integração entre o sistema de tempo real
 , previamente descrito na seção~\ref{sec:HellfireOS}, HellfireOS e a plataforma COMPaaS, também analisada
 anteriormente na seção~\ref{sec:COMPaaS}. Essa camada consistirá em adicionar suporte a duas questões
 críticas no HellfireOS, uma biblioteca compatível com o protocolo de comunicação esperado pela camada de
@@ -31,6 +40,6 @@ via memória compartilhada com o sistema de tempo real.
 \end{figure}
 
 \subsection{Prova de Conceito}
-Para provar a o funcionamento da camada de integração, será utilizada uma
+Para provar o funcionamento da camada de integração, será utilizada uma
 simulação de sensor médico baseado em funções matemáticas suportadas pelo HellfireOS
 ou mesmo um sensor real, caso haja o suporte Cubieboard, HellfireOS e sensor disponível.

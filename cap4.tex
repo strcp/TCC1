@@ -5,12 +5,11 @@ do Hellfire System (HFS). Projetado para sistemas MPSoC, possui gerenciamento
 dinâmico de tarefas que conta com a proteção contra inversão de prioridades. Seu escalonador
 possui as seguintes políticas de escalonamento: Rate Monotonic, Round Robin, Earliest Deadline First e Deadline Monotonic.
 
-Dentre as bibliotecas que nos interessam para o desenvolvimento deste trabalho consta
-uma LibC customizada e a biblioteca matemática (math.h) com emulação de número de ponto
-flutuante. Outro ponto de interesse para o desenvolvimento deste trabalho é observarmos
+Dentre as bibliotecas mais relevantes ao desenvolvimento da integração abordada na seção~\ref{sec:HAC},
+consta uma LibC customizada e a biblioteca matemática (math.h) com emulação de número de ponto
+flutuante. Outro ponto de interesse, nesse caso para a prova de conceito, é observarmos
 que o HellfireOS não possui todas as camadas de rede implementadas, forçando a criação
-ou das camadas faltantes, ou de outra solução, para possibilitar a integração descrita
-na seção~\ref{sec:HAC}.
+ou das camadas faltantes, ou de outra solução, para possibilitar a integração.
 
 A API do hellfire é dividida em 5 (cinco) grupos: Manipulação de Tarefas, Exclusão Mútua,
 Manipulação de Memória, Comunicação entre Processos e LibC.
