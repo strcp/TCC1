@@ -64,8 +64,31 @@ a montagem de grupos de teste com uma facilidade sem precedentes. Essa área se 
 possui uma terminologia própria, \textit{IoMT} (\textit{Internet of Medical Things}).
 
 
-\subsection{Plataformas e Ambientes para IoT}
+\subsection{Sistemas, Plataformas e Ambientes para IoT}
 \label{sec:IoTPlataformas}
+
+\subsubsection{Weave}
+O Wave é uma linguagem criada pelo Google e anunciada na metade do ano de 2015 que busca um modo padronizado
+de possibilitar a comunicação entre dispositivos. Apesar de haver poucas informações devido ao pouco tempo
+do anuncio, os exemplos expostos pela empresa propõe um protocolo baseado em uma estrutura JSON e permite a troca
+de dados entre SmartPhones Android, a nuvem e outros dispositivos compatíveis.
+
+Possui como foco inicial o conceito de \textit{Smart Home}, entretanto possui grande potencial de
+ser utilizado em outros campos, se tornando um sério candidato à protocolo padrão de IoT.
+
+O ponto negativo no presente momento é não possuir muitas informações técnicas ainda, devido ao
+curto espaço de tempo que foi divulgado. Espera-se que seja lançado no mercado no final do ano de
+2015
+
+\subsubsubsection{Brillo}
+Em conjunto com este protocolo, o Google anunciou o lançamento de um sistema operacional desenvolvido em
+conjunto com os engenheiros provenientes da empresa Nest, baseado em Android e feito especialmente para
+\textit{Internet of Things}, o \textit{Brillo}. O sistema foi desenvolvido com a capacidade de se comunicar
+utilizando o protocolo \textit{Weave}, fazendo com que todos os dispositivos utilizando o Brillo se tornem
+uma rede de equipamentos conectados, possibilitando o controle e a troca de informação entre estes dispositivos,
+a nuvem e dispositivos Android. Com a utilização do protocolo \textit{Weave}, os dispositivos utilizando \textit{Brillo}
+serão automaticamente detectados pelos dispositivos Android, semelhante ao funcionamento do protocolo Bonjour~\cite{Bonjour}
+mantido pela Apple.
 
 \subsubsection{mbed}
 A empresa ARM provê uma solução completa de \textit{Internet of Things} (IoT) chamada mbed\cite{mbed}.
