@@ -1,0 +1,14 @@
+Arquitetura suportada pelo SO.
+Acesso à documentação.
+
+
+MBED
+	Negativos
+		OS apenas para ARM® Cortex®-M-based MCUs.
+		OS Aberto à comunidade apenas em agosto de 2015?
+
+	Positivos
+		Possui SDK aberto sob Apache 2.0 licence
+		support for Bluetooth® low energy, Cellular, Ethernet, Thread, Wi-fi®,  Zigbee IP, Zigbee NAN, 6LoWPAN
+		Built-in security management, load balancing and distributed clustering
+		Resource discovery and group support
