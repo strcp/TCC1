@@ -21,3 +21,6 @@ FIWARE
 	nos demais, além de tornar a arquitetura do projeto extremamente ampla e complexa. A questão fundamental que é a força
 	motriz do projeto é o fato de ser OpenSource, facilitando a participação de mais interessados no projeto e criando
 	novas especificações protocolos e modelos abertos à comunidade de desenvolvedores.
+
+
+	Possui uma API RESTful HTTP para troca de informação sobre contexto baseada em XML (https://forge.fiware.org/plugins/mediawiki/wiki/fiware/index.php/FI-WARE_NGSI-10_Open_RESTful_API_Specification)
