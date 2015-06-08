@@ -23,4 +23,5 @@ FIWARE
 	novas especificações protocolos e modelos abertos à comunidade de desenvolvedores.
 
 
+	Detalhar a parte de IoT (https://forge.fiware.org/plugins/mediawiki/wiki/fiware/index.php/Internet_of_Things_(IoT)_Services_Enablement_Architecture)
 	Possui uma API RESTful HTTP para troca de informação sobre contexto baseada em XML (https://forge.fiware.org/plugins/mediawiki/wiki/fiware/index.php/FI-WARE_NGSI-10_Open_RESTful_API_Specification)
