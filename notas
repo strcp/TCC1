@@ -12,3 +12,12 @@ MBED
 		support for Bluetooth® low energy, Cellular, Ethernet, Thread, Wi-fi®,  Zigbee IP, Zigbee NAN, 6LoWPAN
 		Built-in security management, load balancing and distributed clustering
 		Resource discovery and group support
+
+
+
+FIWARE
+	Seu contexto é extremamente abrangente. Seu objetivo bastante ambicioso de se tornar a Core Platform da Future Internet
+	torna o projeto bastante frágil, fazendo que o fracasso de qualquer um de seus submodolos possam impactar negativamente
+	nos demais, além de tornar a arquitetura do projeto extremamente ampla e complexa. A questão fundamental que é a força
+	motriz do projeto é o fato de ser OpenSource, facilitando a participação de mais interessados no projeto e criando
+	novas especificações protocolos e modelos abertos à comunidade de desenvolvedores.
