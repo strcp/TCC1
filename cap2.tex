@@ -58,9 +58,15 @@ análise da qualidade do sono e alimentação. Grandes empresas como a Apple est
 Ainda dentro da área da saúde, existem aplicações com foco maior na área médica, como, por exemplo,
 avaliação de pacientes a distância, possibilitando um atendimento mais rápido e específico baseados em uma
 série de informações provenientes de sensores com finalidades distintas como pressão sangüinea,
-frequência cardíaca, temperatura, entre outros. Essas aplicações representam um grande avanço, tendo
-em vista que pela primeira vez, é possível acessar informações precisas em tempo real, além de possibilitar
-a montagem de grupos de teste com uma facilidade sem precedentes. Essa área se tornou tão proeminente que
+frequência cardíaca, temperatura, entre outros. Um bom exemplo é o de pacientes que possuem
+diabetes, que é a condição de saúde mais gerenciada por tecnologia da informação~\cite{mcgrath2013sensor}.
+Essa condição é uma equação entre consumo de carboidratos, medicamentos utilizados e atividade física.
+Cada uma das variáveis desta equação pode ser facilmente monitorada por sensores e outros dispositivos,
+permitindo a previsão do resultado desta combinação no bem estar do paciente.
+
+Essas aplicações representam um grande avanço, tendo em vista que pela primeira vez, é possível
+acessar informações precisas em tempo real, além de possibilitar a montagem de grupos de teste com
+uma facilidade sem precedentes. Essa área se tornou tão proeminente que
 possui uma terminologia própria, \textit{IoMT} (\textit{Internet of Medical Things}).
 
 
@@ -68,7 +74,7 @@ possui uma terminologia própria, \textit{IoMT} (\textit{Internet of Medical Thi
 \label{sec:IoTPlataformas}
 
 \subsubsection{Weave}
-O Wave é uma linguagem criada pelo Google e anunciada na metade do ano de 2015 que busca um modo padronizado
+O Weave é uma linguagem criada pelo Google e anunciada na metade do ano de 2015 que busca um modo padronizado
 de possibilitar a comunicação entre dispositivos. Apesar de haver poucas informações devido ao pouco tempo
 do anuncio, os exemplos expostos pela empresa propõe um protocolo baseado em uma estrutura JSON e permite a troca
 de dados entre SmartPhones Android, a nuvem e outros dispositivos compatíveis.
@@ -101,15 +107,21 @@ Além de prover uma segurança padrão fim-a-fim entre apps e dispositivos IoT, 
 da plataforma mbed é tratar o consumo de energia como uma das principais restrições.
 
 \subsubsubsection{mbed OS}
-É um sistema operacional, disponibilizado de graça, para processadores da linha ARM Cortex-M, que são
-desenvolvidos visando a eficiência de energia e produtividade.
+É um sistema operacional, disponibilizado gratuitamente, que são desenvolvidos visando a eficiência
+de energia e produtividade.
 
 A arquitetura do mbed OS fornece componentes de software e um framework de aplicação que, combinados
 com a grande diversidade de empresas e desenvolvedores que disponibilizam bibliotecas e drivers, facilitam
 e agilizam o processo de desenvolvimento de aplicações para IoT.
 
-O mbed OS provê suporte aos padrões como Bluetooth Smart®, Cellular, Thread, Wi-Fi®, e 802.15.4/6LoWPAN junto
-com TLS/DTLS, CoAP, HTTP, MQTT e Lightweight M2M
+Esse sistema operacional proposto pela ARM, para este contexto, possui suporte para operar apenas com microcontroladores
+ARM® baseados no Cortex®-M, o que por um lado otimiza o uso do dispositivo em relação ao baixo custo energético
+e outras vantagens provenientes da especialização deste processador, por outro, limita seu uso, dificultando
+a adoção do mbedOS em projetos já existentes com diferentes arquiteturas.
+Apesar de ainda ter sua distribuição limitada, a ARM possui previsão de distribuir o SO para a comunidade em agosto de 2015,
+possivelmente com uma licença permissiva, assim como já acontece com seu SDK, que é distribuído sob a licença Apache 2.0.
+Um ponto que deve ajudar em sua adoção é o vasto suporte do SO à meios de comunicação, como por exemplo,
+Bluetooth®, Celular, Ethernet, Thread, Wi-fi®,  Zigbee IP, Zigbee NAN e 6LoWPAN.
 
 \subsubsubsection{mbed Device Server}
 É um produto que possui licença paga e tem como sua funcionalidade principal permitir o gerenciamento

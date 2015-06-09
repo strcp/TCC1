@@ -1,25 +1,27 @@
-Arquitetura suportada pelo SO.
-Acesso à documentação.
+
+MBED OS
+	O sistema operacional proposto pela ARM para este contexto possui suporte para operar apenas com microcontroladores
+	ARM® baseados no Cortex®-M, o que por um lado otimiza o uso do dispositivo em relação ao baixo custo energético
+	e outras vantagens proveninentes da especialização deste processador, por outro, limita seu uso, dificultando
+	a adoção do mbedOS em projetos já existentes com diferentes arquiteturas.
+	Apesar de ainda ter sua distribuição limitada, a ARM possui previsão de distribuir o SO para a comunidade em agosto de 2015,
+	possivelmente com uma licença permissiva, assim como já acontece com seu SDK, que é distribuido sob a licença Apache 2.0.
+	Um ponto que deve ajudar em sua adoção é o vasto suporte do SO à meios de comunicação, como por exemplo,
+	Bluetooth®, Celular, Ethernet, Thread, Wi-fi®,  Zigbee IP, Zigbee NAN e 6LoWPAN.
 
 
-MBED
-	Negativos
-		OS apenas para ARM® Cortex®-M-based MCUs.
-		OS Aberto à comunidade apenas em agosto de 2015?
-
-	Positivos
-		Possui SDK aberto sob Apache 2.0 licence
-		support for Bluetooth® low energy, Cellular, Ethernet, Thread, Wi-fi®,  Zigbee IP, Zigbee NAN, 6LoWPAN
-		Built-in security management, load balancing and distributed clustering
-		Resource discovery and group support
+mbed Device Server
+	Built-in security management, load balancing and distributed clustering
+	Resource discovery and group support
+	C, Java SE and Java ME Clients for IoT devices
 
 
 
 FIWARE
 	Seu contexto é extremamente abrangente. Seu objetivo bastante ambicioso de se tornar a Core Platform da Future Internet
-	torna o projeto bastante frágil, fazendo que o fracasso de qualquer um de seus submodolos possam impactar negativamente
-	nos demais, além de tornar a arquitetura do projeto extremamente ampla e complexa. A questão fundamental que é a força
-	motriz do projeto é o fato de ser OpenSource, facilitando a participação de mais interessados no projeto e criando
+	torna o projeto bastante frágil, fazendo com que o fracasso de qualquer um de seus submodolos possam impactar negativamente
+	nos demais, além de tornar a arquitetura do projeto extremamente ampla e complexa. A questão fundamental, que é a força
+	motriz do projeto, é o fato de ser OpenSource, facilitando a participação de mais interessados no projeto e criando
 	novas especificações protocolos e modelos abertos à comunidade de desenvolvedores.
 
 
