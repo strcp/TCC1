@@ -27,3 +27,21 @@ FIWARE
 
 	Detalhar a parte de IoT (https://forge.fiware.org/plugins/mediawiki/wiki/fiware/index.php/Internet_of_Things_(IoT)_Services_Enablement_Architecture)
 	Possui uma API RESTful HTTP para troca de informação sobre contexto baseada em XML (https://forge.fiware.org/plugins/mediawiki/wiki/fiware/index.php/FI-WARE_NGSI-10_Open_RESTful_API_Specification)
+
+
+FlowCloud
+
+FlowCloud diz prover uma solução fim-a-fim.
+
+Junta pessoas, dispositivos e serviços acelerando a criação de produtos conectados com alto valor de negócio.
+
+Tem um site do desenvolvedor que expõe a API implementada em C e Python, com código fonte para exemplos de
+diversas funcionalidades
+
+É necessário se cadastrar para ter acesso aos whitepapers do site do
+desenvolvedor
+
+Tem 2 placas de desenvolvimento, a Wi-Fire, que tem a pinagem compatível com a
+maioria dos Arduinos e a CI20  que é uma placa de alta performance para
+desenvolvimento Linux e Android. Ambas as placas utilizam um processador MIPS
+
