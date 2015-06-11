@@ -45,3 +45,25 @@ Tem 2 placas de desenvolvimento, a Wi-Fire, que tem a pinagem compatível com a
 maioria dos Arduinos e a CI20  que é uma placa de alta performance para
 desenvolvimento Linux e Android. Ambas as placas utilizam um processador MIPS
 
+Arrayent
+	Diz ter expertise em segurança para IoT, disponiblizam um whitepaper sobre segurança, mas tem que fazer um request pra eles te enviarem
+
+	Roda em cima de Linux ou FreeRTOS e suporta as plataformas ARM, Broadcom, Texas Instruments e Marvell
+
+	Tem uma engine de alertas que suporta e-mail, SMS e push notification para iOS e Android
+
+	Update de firmware automatico
+
+	Suporte a dispositivos legados através do Device Protocol Interpreter (DPI)
+
+	Utiliza criptografia AES de 128 bits
+
+	É feita redundância nos servidores, que ficam geograficamente separados.
+
+	O Arrayent Connect Agent roda em plataformas des de microcontroladores de 8 bits até processadores 32 bits que rodem Linux
+
+	Diz que existe uma API, mas não está disponível em lugar algum
+
+	Tem um development kit, só que precisa enviar um request pra eles. acredito que tenha documentação da API junto.
+
+
