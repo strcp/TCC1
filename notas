@@ -67,3 +67,63 @@ Arrayent
 	Tem um development kit, só que precisa enviar um request pra eles. acredito que tenha documentação da API junto.
 
 
+Smart Santander (http://www.smartsantander.eu/wiki/)
+	Tem integração com FIWARE em parceria com a Orion Context Broker e a
+	Cosmos Big Data
+
+	Porvê uma Application Support Interface (ASI) para quem deseja apenas coletar
+	dados de sensores e criar uma aplicação baseada nos valores retornados pelos
+	sensores
+
+	Para rodar aplicações utilizando os Testbeds mantidos pelo SmartSantander é
+	necessario registrar uma conta
+
+	Disponibiliza uma IDE do Arduino modificada para testes, antes de enviar a app
+	para o time do SmartSantander fazer deploy
+
+	Os tipos de aplicação que podem rodar nos Testbeds são:
+		- Scripting Client
+		- Experimentation Scripts (conjunto de Scripting Clients)
+		- WiseGui (HTML5 + JavaScript)
+		- TMON (Testbed MONitor) (JAVA GUI)
+
+	Os tipos de nodos disponiblizados são os seguintes:
+		- Waspmote
+		- iSense
+		- TelosB/XM1000
+		- SunSpot
+
+	Waspmote, iSense e TelosB/XM1000 possuem os seguintes sensores:
+		- fixos
+			+ Temperatura
+			+ Luminosidade
+			+ Barulho
+			+ CO
+			+ Humidade relativa
+			+ Humidade do solo
+			+ Temperatura do solo
+		- móveis
+			+ CO
+			+ Suspended Particles (seja la o que isso for)
+			+ Temperatura
+			+ Humidade
+			+ Ozônio (O3)
+			+ Dioxido de nitrogênio (NO2)
+			+ posição do GPS
+			+ Altitude
+			+ Velocidade
+			+ course (percueso?)
+			+ Odômetro
+
+	SunSPOT é um dispositivo com as mesmas características de um smartphone,
+	porém possui os seguintes sensores e atuadores:
+		- 8 tro-color LEDs
+		- 2 momentary switches (Seja la o que for)
+		- Acelerômetro de 3 eixos
+		- temperatura
+		- luminosidade
+		- 5 pinos de GPIO
+		- 4 pinos de "high current" output
+
+	O SunSPOT roda uma Java VM (Squawk VM) que implementa o J2ME e pode ser
+	programado utilizando qualquer IDE, por exemplo, NetBeans
