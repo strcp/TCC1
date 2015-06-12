@@ -97,6 +97,7 @@ serão automaticamente detectados pelos dispositivos Android, semelhante ao func
 mantido pela Apple.
 
 \subsubsection{mbed}
+\label{subsec:mbed}
 A empresa ARM provê uma solução completa de \textit{Internet of Things} (IoT) chamada mbed\cite{mbed}.
 Esta plataforma é dividida em três módulos, mbed OS, mbed Device Server e mbed Tools.\\
 A plataforma utiliza em seu sistema embarcado a tecnologia mbedTLS para criptografia de dados com baixo
@@ -158,14 +159,23 @@ dispositivos registrados no serviço.
 Arrayent~\cite{arrayent} é uma plataforma IoT que oferece conexão e segurança entre dispositivos IoT e aplicações
 para  smartphones, tablets e web com baixo custo e simplicidade. A plataforma é composta de 4 componentes:
 Arrayent Connect Agent, Arreyent Connect Cloud, Arrayent Mobile Framework e Arrayent Cloud Insight.
+A documentação do produto é obtida através de uma certa burocracia com o pedido de liberação para
+a empresa, assim como o kit de desenvolvimento disponível, o que torna o seu uso e o
+conhecimento de seu funcionamento um pouco mais complicado comparando com outras alternativas como o
+mbed (subseção~\ref{subsec:mbed}), ou FIWIRE (subseção~\ref{subsec:FIWARE}).
 
 \subsubsubsection{Arrayent Connect Agent}
 É utilizado por desenvolvedores de software embarcado. Funciona como um módulo do firmware que gerencia a
-seção do dispositivo com junto ao Arreyent Connect Cloud e abstrai essa responsabilidade para o desenvolvedor
+seção do dispositivo junto ao Arreyent Connect Cloud e abstrai essa responsabilidade do desenvolvedor
 do firmware, deixando-o livre para se preocupar em desenvolver apenas as funcionalidades necessárias para o
 funcionamento do dispositivo.
 
-Atualmente a plataforma suporta Wi-Fi, ZigBee, Z-Wave LAN e os sistemas operacionais Linux ou FreeRTOS.
+Possui um suporte interessante, rodando sobre Linux ou FreeRTOS. Utilizando plataformas bastante populares
+desenvolvidas por empresas como ARM, Broadcom, Texas Instruments, e Marvel, o \textit{Arrayent Connect Agent} roda
+em plataformas desde microcontroladores de 8 bits até processadores 32 bits. Apesar de já surportar
+uma vasta gama, seu design foi feito pensado para utilização em múltiplas plataformas, facilitando a
+adaptação para novas arquiteturas com demanda de mercado. Atualmente o \textit{Arrayent Connect Agent}
+suporta comunicação com as tecnologias Wi-Fi, ZigBee, Z-Wave LAN.
 
 \subsubsubsection{Arrayent Connect Cloud}
 O Arrayent Connect Cloud é o coração da plataforma de IoT da Arrayent. Ele é essencialmente um sistema
@@ -174,7 +184,7 @@ físicos, para que as aplicações web e mobile possam se conectar e recolher in
 sobre os dispositivos. Além disso, o Arreyent Connect Cloud pode emitir alertas, fazer update de firmware
 \lq over-the-air\rq, gerenciar contas de usuários e muito mais.
 
-\subsubsubsection{Arreyent Mobile Framework}
+\subsubsubsection{Arrayent Mobile Framework}
 O Arrayent Mobile Framework ajuda os desenvolvedores mobile a criar rapidamente aplicativos intuitivos e
 confiáveis para o mercado. Ele abstrai a complexidade envolvida na utilização da plataforma M2M da Arrayent,
 que é uma API web de baixo nível, deixando o desenvolvedor livre para se preocupar apenas com as funcionalidades
@@ -268,6 +278,7 @@ e provedores de serviços para compor um \textit{Smart Service} rodando nas inst
 Estas são ferramentas para acessar facilmente informações de sensores e gerenciar dados.
 
 \subsubsection{FIWARE}
+\label{subsec:FIWARE}
 O FIWARE é uma iniciativa para promover um ecossistema que capture as oportunidades que surgirão com a nova onda
 de digitalização causada pela integração das novas tecnologias relacionadas à Internet. Esse projeto é
 baseado nos cinco módulos descritos a seguir.
