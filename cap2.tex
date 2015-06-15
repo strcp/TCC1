@@ -229,27 +229,56 @@ para fomentar o desenvolvimento de serviços e aplicações para uma \textit{Sma
 Os resultados de pesquisas efetuadas nesse ambiente devem influenciar as definições e especificações da arquitetura da
 Internet do Futuro do ponto de vista dos serviços de \textit{Internet of Things}~\cite{citeulike:13508566}.
 
-O SmartSantander irá possuir mais de 20.000 sensores para IoT em um cenário urbano. O projeto pretende promover os
-seguintes resultados~\cite{smartsantandersite}.
-\begin{enumerate}
+O SmartSantander irá possuir mais de 20.000 sensores para IoT distribuídos em quatro cidades Belgrade,
+Guildford, Lübeck e Santander, provendo um cenário urbano para a pesquisa e implementação de tecnologias relativas
+à IoT.
+O projeto pretende promover os seguintes resultados~\cite{smartsantandersite}.
+\begin{itemize}
 \item Validação das abordagens de modelos arquiteturais da \textit{Internet of Things}.
 \item Identificação dos pontos chave para criação de IoT, particularmente os protocolos e mecanismos de gerenciamento e
-interação; tecnologia de dispositivos e serviços como localização, identificação, gerenciameno e segurança.
+interação; tecnologia de dispositivos e serviços como localização, identificação, gerenciamento e segurança.
 \item Identificação da aceitação das tecnologias e serviços de IoT.
+\end{itemize}
+
+As instalações experimentais propostas pelo \textit{SmartSantander} precisam atender uma série de demandas
+de diferentes \textit{stakeholders}, desde desenvolvedores de soluções e provedores de serviços IoT até os usuários finais.
+Vários requisitos funcionais e não-funcionais foram levantados no princípio do projeto, levando em consideração
+os variados pontos de vista e necessidades dos \textit{stakeholders} envolvidos, dando origem à uma arquitetura divida
+em três pontos interligados~\cite{smartsantander_testbeds}:
+
+\begin{enumerate}
+\item \textbf{Nodos de IoT:}
+	Responsável por sensorar seu parâmetro correspondente, como temperatura, luminosidade, presença de carros, etc. A maioria destes
+	nodos está integrado nos repetidores, enquanto os demais, como sensores de estacionamento, que são inseridos sob o asfalto,
+	funcionam por conta própria apenas enviando seus dados através de uma conexão wireless aos repetidores.
+\item \textbf{Repetidores:}
+	São nodos instalados em pontos altos como postes de luz, sinaleiras entre outros, devido a sua finalidade
+	de repassar os dados fornecidos por outros nodos. A comunicação entre estes nodos e os de IoT é feita através
+	do protocolo 802.15.4.
+\item \textbf{Gateways:}
+	Tanto os nodos de IoT quanto os repetidores são configurados para enviar suas informações, tanto as experimentais quanto
+	as de produção através dos gateways. No momento que um gateway recebe uma informação, pode salvá-la localmente ou enviar
+	para outras máquinas, através das diferentes interfaces de comunicação presentes nele (WiFi, GPRS/UMTS ou ethernet).
 \end{enumerate}
+
+O projeto é bastante amplo, com uma rica documentação e utilização de padrões conhecidos, o que facilita o desenvolvimento
+tanto da sua própria arquitetura quanto o de novas aplicações para serem aplicadas no campo de testes fornecido, disponibilizando
+inclusive, uma IDE modificada para Arduino, permitindo a validação de aplicações de testes antes do envio para implantação
+pelo time do SmartSantander.
+
+Uma das metas do projeto é prover a integração com componentes provenientes de diferentes tipos de projetos já existentes,
+como por exemplo o WISEBED, SENSEI, TELCO 2.0 para implementação de testes e o FIWARE~\ref{subsec:FIWARE} para
+o fornecimento de dados.
+
+O \textit{SmartSantander} testbed consiste em quatro subsistemas que operam através do uma conjunto de diferentes
+dispositivos (IoT, Gateway e Nodos), descritos anteriormente, provendo diferentes características e
+capacidades descritos a seguir:~\cite{citeulike:13508566}:
 
 \begin{figure}[H]
 	\centering
 		\includegraphics[width=0.7\textwidth]{fig/smartsantander.jpg}
 	\caption{Funcionamento da infraestrutura do projeto SmartSantander em alto nível.}
 \end{figure}
-
-As instalações experimentais propostas pelo \textit{SmartSantander} precisam atender uma série de demandas
-de diferentes \textit{stakeholders}, desde desenvolvedores de soluções e provedores de serviços IoT até os usuários finais.
-Vários requisitos funcionais e não-funcionais foram levantados no princípio do projeto, levando em consideração
-os variados pontos de vista e necessidades dos \textit{stakeholders} envolvidos. Os resultados foram divididos em quatro
-aspectos, criando o modelo arquitetura com os subsistemas descritos a seguir~\cite{citeulike:13508566}:
-
 
 \subsubsubsection{Authentication, Authorisation and Accounting (AAA)}
 Implementa funções que controlam e auditam o acesso à todas as funcionalidades do sistema. Possui processos
@@ -276,6 +305,7 @@ mecanismos para configurar os experimentos, controle dos experimentos e análise
 O \textit{Application Support} provê funcionalidades para serem utilizadas por desenvolvedores de aplicações
 e provedores de serviços para compor um \textit{Smart Service} rodando nas instalações do \textit{SmartSantander}.
 Estas são ferramentas para acessar facilmente informações de sensores e gerenciar dados.
+
 
 \subsubsection{FIWARE}
 \label{subsec:FIWARE}
