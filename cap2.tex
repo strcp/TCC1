@@ -200,22 +200,34 @@ gerando relatórios de dados comuns a todos os seus produtos como localização 
 os dispositivos e as aplicações, tendência de pico de utilização e muito mais. O Arrayent Cloud Insight agrega,
 normaliza, filtra e entrega os dados dos dispositivos para qualquer solução de análise que você utilizar.
 
-\subsubsection{Samsung IoT Plataform}
-A plataforma IoT da Samsung provê uma conexão padronizada de diversos dispositivos a um dispositivo
-\lq smart\rq\ ou hub.
+\subsubsection{Apple HomeKit}
+O \textit{HomeKit} é um framework fornecido pela Apple para comunicação e controle de dispositivos integrantes
+de uma \textit{SmartHome}. Para permitir a comunicação entre o framework e o hardware, os desenvolvedores
+de hardware precisam ser compatíveis com o protocolo criado pela Apple chamado \textit{HomeKit Accessory Protocol}.
+Os aplicativos utilizando o HomeKit fornecem aos uma maneira simples de descobrir os acessórios compatíveis e
+configurá-los. É possível também adicionar regras de negócio para estes acessórios, já que os objetos configurados
+pelo HomeKit ficam armazenados em um banco de dados no dispositivo iOS do usuário, sincronizado através do iCloud
+com outros dispositivos iOS que este usuário possa ter.
+Apesar de ser bastante centrado nos dispositivos iOS, é possível acessar e alterar os acessórios configurados
+de forma remota através do iCloud de forma segura.
 
-A Samsung disponibiliza um SDK que simplifica o desenvolvimento de novos serviços, coletando
-e processando os dados de sensores e serviços que o usuário possa ter. Os desenvolvedores não precisam analisar ou
-fazer setup da infraestrutura complexa de conexão entre os dispositivos ou se preocupar com os dados do usuário na cloud.
+Atualmente existe uma série de fabricantes que suportam o protolco HomeKit da Apple, entre elas:
+\begin{itemize}
+	\item \textbf{Ecobee:} Termostatos.
+	\item \textbf{Elgato:} Automação de portas, janelas e avaliação de gasto energético.
+	\item \textbf{iHome:} Áudio e vídeo.
+	\item \textbf{Insteon:} Iluminação, termostatos, câmeras WiFi, automação de acesso, entre outros.
+	\item \textbf{Lutron:} Iluminação.
+\end{itemize}
 
-A plataforma de IoT da Samsung foi desenhada para que os desenvolvedores se concentrem apenas nas funcionalidades
-dos serviços que estão sendo desenvolvidos por eles. Uma limitação do SDK da Samsung é que ele é disponibilizado
-apenas para a plataforma Android 4.1 ou superior.
+A documentação é bastante rica, assim como os exemplos de código, tanto para o desenvolvimento de
+software utilizando o HomeKit framework para iOS quanto para os fabricantes de hardware, entretanto,
+ambos precisam de registro pago na Apple para utilização do SDK e da especificação técnica de hardware.
 
 \subsubsection{IBM Internet of Things Foundation}
 A IBM desenvolveu a \textit{IBM Internet of Things Foundation}, que consiste em um sistema na nuvem que torna simples
 extrair valor dos dispositivos \textit{Internet of Things}. Combinada com a plataforma IBM Bluemix\texttrademark,
-é possível acessar dispositivos e dados rapidamente, bem como compor aplicações de análise, aplicativos móveis 
+é possível acessar dispositivos e dados rapidamente, bem como compor aplicações de análise, aplicativos móveis
 e até um painel de visualizações.
 
 A \textit{IBM Internet of Things Foundation} provê amplo suporte aos seus usuários
