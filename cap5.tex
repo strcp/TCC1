@@ -13,7 +13,7 @@ Para possibilitar essa comunicação, será implementada uma camada de integraç
 , previamente descrito na seção~\ref{sec:HellfireOS}, HellfireOS e a plataforma COMPaaS, também analisada
 anteriormente na seção~\ref{sec:COMPaaS}. Essa camada consistirá em adicionar suporte a duas questões
 críticas no HellfireOS, uma biblioteca compatível com o protocolo de comunicação esperado pela camada de
-mais baixo nível do COMPaaS e, para prova de conceito, uma meio de comunicação entre o HellfireOS e a
+mais baixo nível do COMPaaS e, para prova de conceito, um meio de comunicação entre o HellfireOS e a
 plataforma IoT, tendo em vista que o sistema operacional ainda não possui uma implementação de todas as
 camadas de rede necessárias, como por exemplo, o protocolo TCP.
 
@@ -29,7 +29,7 @@ entre o host Linux e o HellfireOS será feito através de um espaço de memória
 abstraída da camada de integração desenvolvida, permitindo que a mesma camada seja utilizada com
 poucas ou nenhuma alteração quando o HellfireOS possuir outros meios de comunicação via rede.
 Para possibilitar que essa comunicação entre host e HellfireOS funcione, será desenvolvida uma
-daemon no sistema host para interfacear sua camada de comunicação via rede com a comunicação
+\textit{daemon} no sistema host para interfacear sua camada de comunicação via rede com a comunicação
 via memória compartilhada com o sistema de tempo real.
 
 \begin{figure}[H]
@@ -40,6 +40,6 @@ via memória compartilhada com o sistema de tempo real.
 \end{figure}
 
 \subsection{Prova de Conceito}
-Para provar o funcionamento da camada de integração, será utilizada uma
-simulação de sensor médico baseado em funções matemáticas suportadas pelo HellfireOS
-ou mesmo um sensor real, caso haja o suporte Cubieboard, HellfireOS e sensor disponível.
+Para provar o funcionamento da camada de integração, duas alternativas serão levadas em consideração,
+criar um simulador de sensor médico baseado em funções matemáticas suportadas pelo HellfireOS
+ou utilizar um sensor real, caso haja o suporte no hardware utilizado para o desenvolvimento.

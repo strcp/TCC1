@@ -3,13 +3,11 @@
 \subsubsection{Objetivos}
 \label{sec:objetivos_1}
 Esta primeira etapa do trabalho de conclusão possui como objetivos, em primeiro lugar,
-elevar o conhecimento nas áreas de sistemas embarcados. Baseado no conhecimento de pesquisa
-feita no decorrer deste trabalho, será criado o ambiente necessário para efetuar a prova de conceito,
-obtendo o hardware necessário, e fazendo as instalações necessárias de sistemas operacionais, host
-Linux e o HellfireOS, este de forma virtualizada. Também serão iniciadas as medidas necessárias
-para suprir a falta de das camadas de protocolos de rede necessárias, implementando uma comunicação
-através de memória compartilhada entre os dois sistemas e, inclusive, uma deamon para interfacear
-o espaço de memória compartilhada no host Linux e a rede.
+elevar o conhecimento nas áreas de sistemas embarcados e \textit{Internet of Things}.
+Para tal, será feita uma ampla pesquisa do estado da arte nas áreas em questão,
+aprofundando o conhecimento técnico nos respectivos assuntos.
+O objetivo secundário desta etapa visa obter todas as informações e equipamentos necessários
+para a criação dos ambiente que serão utilizados na segunda etapa do projeto.
 
 \subsubsection{Cronograma}
 \renewcommand{\arraystretch}{1.5}
@@ -22,20 +20,17 @@ o espaço de memória compartilhada no host Linux e a rede.
 \hline
 \textbf{Data} & \multicolumn{1}{c|}{\textbf{Evento}} \\
 \hline
-22.04.2015 & Criação do ambiente da Cubieboard com o host Linux. \\
-04.04.2015 & Preparação do ambiente com o suporte e configurações de virtualização necessárias. \\
-20.05.2015 & Instalação do HellfireOS de forma virtualizada rodando sobre o host Linux. \\
+05.05.2015 & Aprofundamento no estado da arte de \textit{Internet of Things}. \\
+20.05.2015 & Aprofundamento nos componentes utilizados para a segunda etapa do projeto. \\
 22.06.2015 & Entrega do Volume Final de TC1. \\
 \hline
 \end{tabularx}
 
 \subsubsection{Lista de Atividades}
 \begin{itemize}
-\item Conseguir o hardware necessário para as implementações.
-\item Escolha da distribuição adequada para rodar no hardware.
-\item Instalação do host no hardware.
-\item Pesquisa e configuração do suporte de virtualização no host.
-\item Pesquisa e instalação do HellfireOS como sistema virtualizado.
+\item Buscar o hardware necessário para as implementações.
+\item Busca de referencial teórico sobre o estado da arte em \textit{Internet of Things}.
+\item Busca por documentação técnica das diferentes soluções pesquisadas.
 \end{itemize}
 
 \subsection{Proposta TCC 2}
@@ -45,7 +40,7 @@ Ao final do projeto, objetiva-se permitir que o HellfireOS se integre à plaform
 permitindo que os produtos que possuam o HellfireOS como seu sistema embarcado tenham
 uma integração mais rápida e simples de seus dispositivos sensores à plataforma IoT.
 
-Nesta etapa final, serão finalizados os ajustes necessários do ambiente proposto para teste
+Nesta etapa final, serão finalizados criação e ajustes necessários do ambiente proposto para teste
 para então implementar a integração da plataforma COMPaaS com o sistema HellfireOS,
 descritos nas seções~\ref{sec:COMPaaS} e~\ref{sec:HellfireOS} respectivamente, com a criação
 do \textit{Hellfire and COMPaaS Integration Layer} (HAC), descrito na seção~\ref{sec:HAC},
@@ -53,8 +48,8 @@ objetivando a criação de uma solução completa, desde o sistema operacional e
 responsável pela gerência de múltiplos sensores, até a plataforma de IoT, possibilitando
 um uso de funcionalidade robusta e simples do HellfireOS na criação e aplicação de
 equipamentos integráveis no conceito de \textit{Internet of Things}.
-Para prova e testes desta integração, será criado um simulador de sensor da área médica,
-baseada em estudos efetuados nesta segunda etapa do trabalho, possibilitando um teste
+Para prova e testes desta integração, será criado um simulador de sensor para área médica,
+baseado em estudos efetuados nesta segunda etapa do trabalho, possibilitando um teste
 da integração de forma completa, passando por todos os níveis descritos nas arquiteturas
 tanto da plataforma COMPaaS como no HellfireOS nas seções anteriores.
 
@@ -69,8 +64,9 @@ tanto da plataforma COMPaaS como no HellfireOS nas seções anteriores.
 \hline
 \textbf{Data} & \multicolumn{1}{c|}{\textbf{Evento}} \\
 \hline
-07.08.2015 & Implementação da comunicação entre host e HellfireOS através de memória compartilhada. \\
-21.08.2015 & Criação da daemon para interfacear a memória compartilhada do host e a rede.  \\
+07.04.2015 & Criação do ambiente da Cubieboard com o host Linux. \\
+13.08.2015 & Implementação da comunicação entre host e HellfireOS através de memória compartilhada. \\
+21.08.2015 & Criação da \textit{daemon} para interfacear a memória compartilhada do host e a rede.  \\
 09.10.2015 & Término do desenvolvimento do HAC Integration Layer no HellfireOS. \\
 06.11.2015 & Criação do simulador de sensor para prova de conceito da integração. \\
 13.11.2015 & Teste completo da implementação. \\
@@ -81,9 +77,10 @@ tanto da plataforma COMPaaS como no HellfireOS nas seções anteriores.
 
 \subsubsection{Lista de Atividades}
 \begin{itemize}
+\item Escolha da distribuição adequada para rodar no hardware.
 \item Testes para prova da implementação da comunicação entre host e HellfireOS.
-\item Definição do funcionamento da daemon proposta.
-\item Testes da implementação da daemon de comunicação entre memória compartilhada e rede.
+\item Definição do funcionamento da \textit{daemon} proposta.
+\item Testes da implementação da \textit{daemon} de comunicação entre memória compartilhada e rede.
 \item Testes do funcionamento da implementação do HAC Integration Layer.
 \item Definição das funcionalidades do sensor a ser simulado.
 \item Teste para prova da implementação da integração.

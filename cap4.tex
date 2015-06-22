@@ -4,12 +4,12 @@
 \subsection{Definição de um Sistema de Tempo Real}
 \label{sec:DefSTR}
 Um sistema de tempo real, ao contrário do que se costuma pensar, não tem
-como objetivo uma execução necessariamente rápida, mas sim, previsível.
+como objetivo uma execução necessariamente rápida, mas previsível.
 Neste tipo de sistema, pode-se encontrar duas características fundamentais:
 
 \begin{itemize}
 \item Um sistema de tempo real precisa produzir resultados computacionais corretos
-(chamados de correção logica ou funcional).
+(chamados de correção lógica ou funcional).
 \item Os resultados computacionalmente corretos obtidos precisam ser concluídos em
 um período de tempo pré-definido, caracterizando a previsibilidade na execução da tarefa.
 \end{itemize}
@@ -23,11 +23,11 @@ nesse tipo de sistemas.~\cite{Li:2003:RCE:829584}
 Os sistemas de tempo real são utilizados para atender à tarefas que possuem algum tipo
 de restrição temporal em sua execução. Esse tipo de necessidade está muito presente no
 dia-a-dia, e são aplicados aos mais diversos tipos de tarefas, desde controladores de
-leitores de DVDs, elevadores, freios de carro, controladores de mísseis e até piloto automático
+leitores de DVDs, elevadores, freios de carro, controladores de mísseis até piloto automático
 de aeronaves.
 
 \subsection{Tipos de Sistema de Tempo Real}
-Como abordado na seção~\ref{sec:DefSTR}, para que um sistemas de tempo real obtenha uma
+Como abordado na seção~\ref{sec:DefSTR}, para que um sistema de tempo real obtenha uma
 execução de tarefa correta, é necessário terminar essa execução em um período pré-definido,
 chamado de \textit{deadline}. Portanto, é possível afirmar que este tipo de sistema, por possuir
 essa restrição temporal, é regido pelos \textit{deadlines} de suas tarefas.
@@ -45,7 +45,7 @@ inúteis, caracterizando uma penalidade grave em perder o prazo de execução.
 
 Um sistema de tempo real crítico é um sistema que precisa executar suas tarefas dentro do prazo
 pré-definido com uma tolerância muito próxima de zero. Os prazos devem ser atendidos, ou os resultados
-são catastróficos. O custo da perda de prazos na execução possuem um custo muito alto, podendo inclusive
+são catastróficos. A perda de prazos na execução possui um custo muito alto, podendo inclusive
 envolver vidas humanas. Os resultados computados após o prazo pré-definido possuem uma utilidade próxima
 de zero ou possuem um grande grau de depreciação com a decorrência do tempo após o prazo.~\cite{Li:2003:RCE:829584} \\\\
 Alguns exemplos de sistemas de tempo real considerados críticos são:
@@ -57,7 +57,7 @@ Alguns exemplos de sistemas de tempo real considerados críticos são:
 \end{itemize}
 
 \subsubsection{Sistemas de Tempo Real Não Críticos}
-Os sistemas de tempo real considerados não críticos são aqueles aonde uma perda de prazo
+Os sistemas de tempo real considerados não críticos são aqueles onde uma perda de prazo
 resulta em uma penalidade leve, como uma distorção em uma música sendo lida de um CD, perda
 de alguns frames em um vídeo entre outras consequências de baixa criticidade.
 
@@ -101,7 +101,7 @@ da aplicação e de sistema, permitindo assim que o designer possibilitem ao sis
 baixa memória, como são os casos mais típicos de sistemas embarcados críticos.
 
 Dentre as bibliotecas mais relevantes ao desenvolvimento da integração abordada na seção~\ref{sec:HAC},
-consta uma LibC customizada e a biblioteca matemática (math.h) com emulação de número de ponto
+constam uma LibC customizada e a biblioteca matemática (math.h) com emulação de número de ponto
 flutuante. Outro ponto de interesse, nesse caso para a prova de conceito, é observarmos
 que o HellfireOS não possui todas as camadas de rede implementadas, forçando a criação
 ou das camadas faltantes, ou de outra solução, para possibilitar a integração.
@@ -129,7 +129,7 @@ plataforma para design que compreende diferentes níveis de abstração, partind
 escritas em C até a prototipação em FPGAs. Isto é possível graças as ferramentas e módulos
 que fazem parte do Hellfire Framework (HFFW).
 
-O Hellfire Framwork apresenta um fluxo para o design de MPSoC baseado em sistemas embarcados do tipo crítico
-como equipamentos uso médicos, dispositivos de segurança e sistemas de aeronaves. Este tipo de sistemas
-apresenta uma necessidade específica de design, englobando preocupações especiais em relação à consumo de
-energia e alta performance mantendo o processamento de tempo real~\cite{5450495}.
+O Hellfire Framwork apresenta um fluxo para o design de MPSoC baseado em sistemas embarcados do tipo crítico,
+como equipamentos de uso médico, dispositivos de segurança e sistemas de aeronaves. Este tipo de sistema
+apresenta uma necessidade específica de design, englobando preocupações especiais em relação ao consumo de
+energia e alta performance, mantendo o processamento de tempo real~\cite{5450495}.
